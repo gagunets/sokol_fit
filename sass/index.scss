@@ -94,8 +94,7 @@ header {
   }
 
   .main_section {
-    margin-top: $margin * 5;
-    margin-bottom: $margin * 5;
+    margin: $margin * 5 auto;
 
     h1 {
       font-family: $header_upper;
@@ -148,6 +147,11 @@ main {
         font-family: $header;
         font-size: $s_font_size;
         padding: 10px 40px;
+        cursor: pointer;
+
+        :hover {
+          background-color: darken($accent_color, 5%);
+        }
       }
     }
   }
@@ -200,6 +204,10 @@ main {
   .main_section {
     max-width: 980px;
     margin: $margin * 5 auto;
+
+    .main_header h1 {
+      font-size: $l_font_size;
+    }
   }
 
   main {
@@ -218,7 +226,6 @@ main {
       article {
         background: none;
         flex: 1;
-        //padding: $padding * 2;
         margin: $margin * 2;
 
         h2 {
@@ -227,6 +234,10 @@ main {
 
         p {
           color: $second_color;
+        }
+
+        button:hover {
+          background-color: darken($accent_color, 5%);
         }
       }
     }

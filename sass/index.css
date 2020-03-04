@@ -60,8 +60,7 @@ header nav .navigation ul li a .fa-shopping-bag {
   color: #15aabf;
 }
 header .main_section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto;
 }
 header .main_section h1 {
   font-family: BlenderPro_heavy;
@@ -103,6 +102,10 @@ main .workout article button {
   font-family: BlenderPro_bold;
   font-size: 1.3rem;
   padding: 10px 40px;
+  cursor: pointer;
+}
+main .workout article button :hover {
+  background-color: #1296a8;
 }
 
 @media (min-width: 550px) {
@@ -146,6 +149,9 @@ main .workout article button {
     max-width: 980px;
     margin: 100px auto;
   }
+  .main_section .main_header h1 {
+    font-size: 3rem;
+  }
 
   main .workout {
     display: flex;
@@ -168,6 +174,9 @@ main .workout article button {
   }
   main .workout article p {
     color: #000000;
+  }
+  main .workout article button:hover {
+    background-color: #1296a8;
   }
 }
 
