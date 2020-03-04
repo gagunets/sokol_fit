@@ -1,0 +1,233 @@
+//fonts URLs
+@font-face {
+  font-family: "Blockletter";
+  src: url('../fonts/Blockletter.otf');
+}
+
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url('../fonts/BlenderPro-Heavy.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url('../fonts/BlenderPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url('../fonts/BlenderPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url('../fonts/BlenderPro-Thin.ttf');
+}
+
+//margin/padding
+$margin: 20px;
+$padding: 20px;
+
+//colors
+$main_color: #ffffff;
+$second_color: #000000;
+$accent_color: #15aabf;
+
+//fonts
+$header_upper: BlenderPro_heavy;
+$header: BlenderPro_bold;
+$text: BlenderPro_thin;
+
+//font sizes
+$l_font_size: 3rem;
+$m_font_size: 2rem;
+$s_font_size: 1.3rem;
+$xs_font_size: 1rem;
+
+
+body {
+  max-width: 980px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $second_color;
+  padding: $padding;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    .desktop_logo {
+      display: none;
+    }
+
+    .mobile_logo {
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    .navigation ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      margin-top: $margin;
+
+
+      li a {
+        font-family: $text;
+        color: $main_color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: $s_font_size;
+
+        .fa-shopping-bag {
+          color: $accent_color;
+        }
+      }
+    }
+  }
+
+  .main_section {
+    margin-top: $margin * 5;
+    margin-bottom: $margin * 5;
+
+    h1 {
+      font-family: $header_upper;
+      font-size: $m_font_size;
+      color: $main_color;
+      margin-bottom: $margin;
+    }
+
+    p {
+      color: $main_color;
+      font-family: $text;
+      font-size: $s_font_size;
+    }
+  }
+}
+
+main {
+
+  .workout {
+
+    img {
+      display: none;
+    }
+
+    article {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../img/ring_muscle_ups.jpg') center top;
+      background-size: cover;
+      padding: $padding*2 $padding;
+
+      h2 {
+        font-family: $header;
+        font-size: $m_font_size;
+        color: $main_color;
+        margin-bottom: $margin;
+      }
+
+      p {
+        color: $main_color;
+        font-family: $text;
+        font-size: $s_font_size;
+        margin-bottom: $margin * 2;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background-color: $accent_color;
+        color: $main_color;
+        font-family: $header;
+        font-size: $s_font_size;
+        padding: 10px 40px;
+      }
+    }
+  }
+}
+
+
+//responsive
+@media (min-width: 550px) {
+  header nav .mobile_logo {
+    width: 150px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  main, footer {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .mobile_logo {
+      display: none;
+    }
+
+    .desktop_logo {
+      display: block;
+      width: 110px;
+      margin-left: $margin;
+    }
+
+    ul {
+      margin-right: $margin;
+
+      li {
+        margin-left: $margin;
+      }
+    }
+  }
+
+  .main_section {
+    max-width: 980px;
+    margin: $margin * 5 auto;
+  }
+
+  main {
+    .workout {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: $margin * 2;
+
+      .image {
+        flex: 1;
+        background-image: url(../img/ring_muscle_ups.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      article {
+        background: none;
+        flex: 1;
+        //padding: $padding * 2;
+        margin: $margin * 2;
+
+        h2 {
+          color: $second_color;
+        }
+
+        p {
+          color: $second_color;
+        }
+      }
+    }
+  }
+}
