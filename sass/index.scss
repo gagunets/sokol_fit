@@ -201,9 +201,9 @@ main {
     }
   }
 
-  .main_section {
+  header .main_section {
     max-width: 980px;
-    margin: $margin * 5 auto;
+    margin: $margin * 7 auto;
 
     .main_header h1 {
       font-size: $l_font_size;

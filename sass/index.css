@@ -145,11 +145,11 @@ main .workout article button :hover {
     margin-left: 20px;
   }
 
-  .main_section {
+  header .main_section {
     max-width: 980px;
-    margin: 100px auto;
+    margin: 140px auto;
   }
-  .main_section .main_header h1 {
+  header .main_section .main_header h1 {
     font-size: 3rem;
   }
 
