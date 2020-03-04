@@ -125,6 +125,7 @@ main .workout article button {
   header nav {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
   header nav .mobile_logo {
     display: none;

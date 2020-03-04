@@ -176,6 +176,7 @@ main {
   header nav {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 
     .mobile_logo {
       display: none;
