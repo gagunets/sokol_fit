@@ -1,0 +1,45 @@
+//fonts URLs
+@font-face {
+  font-family: "Blockletter";
+  src: url('../fonts/Blockletter.otf');
+}
+
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url('../fonts/BlenderPro-Heavy.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url('../fonts/BlenderPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url('../fonts/BlenderPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url('../fonts/BlenderPro-Thin.ttf');
+}
+
+//margin/padding
+$margin: 20px;
+$padding: 20px;
+
+//colors
+$main_color: #ffffff;
+$second_color: #000000;
+$accent_color: #15aabf;
+
+//fonts
+$header_upper: BlenderPro_heavy;
+$header: BlenderPro_bold;
+$text: BlenderPro_thin;
+
+//font sizes
+$l_font_size: 3rem;
+$m_font_size: 2rem;
+$s_font_size: 1.3rem;
+$xs_font_size: 1rem;

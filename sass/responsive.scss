@@ -1,0 +1,91 @@
+@import "variables";
+
+
+//responsive
+
+@media (min-width: 550px) {
+  header nav .mobile_logo {
+    width: 150px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  main, footer {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  header nav {
+    max-width: 1380px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .mobile_logo {
+      display: none;
+    }
+
+    .desktop_logo {
+      display: block;
+      width: 110px;
+      margin-left: $margin;
+    }
+
+    ul {
+      margin-right: $margin;
+
+      li {
+        margin-left: $margin;
+      }
+    }
+  }
+
+  header .main_section {
+    max-width: 980px;
+    margin: $margin * 7 auto;
+
+    .main_header h1 {
+      font-size: $l_font_size;
+    }
+  }
+
+  main {
+    .workout {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: $margin * 2;
+
+      .image {
+        flex: 1;
+        background-image: url(../img/rings.jpg);
+        background-position: left;
+        background-size: cover;
+      }
+
+      article {
+        background: none;
+        flex: 1;
+        margin: $margin * 2;
+
+        h2 {
+          color: $second_color;
+        }
+
+        p {
+          color: $second_color;
+        }
+
+        button:hover {
+          background-color: darken($accent_color, 5%);
+        }
+      }
+    }
+  }
+}

@@ -108,6 +108,26 @@ main .workout article button :hover {
   background-color: #1296a8;
 }
 
+@font-face {
+  font-family: "Blockletter";
+  src: url("../fonts/Blockletter.otf");
+}
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
 @media (min-width: 550px) {
   header nav .mobile_logo {
     width: 150px;
@@ -126,6 +146,8 @@ main .workout article button :hover {
   }
 
   header nav {
+    max-width: 1380px;
+    margin: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
