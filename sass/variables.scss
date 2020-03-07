@@ -18,6 +18,11 @@
 }
 
 @font-face {
+  font-family: "BlenderPro_book";
+  src: url('../fonts/BlenderPro-Book.ttf');
+}
+
+@font-face {
   font-family: "BlenderPro_thin";
   src: url('../fonts/BlenderPro-Thin.ttf');
 }
@@ -60,6 +65,7 @@ $gray_color: #232323;
 $header_upper: 'Fugaz One', cursive;
 $header: BlenderPro_bold;
 $medium: BlenderPro_medium;
+$book: BlenderPro_book;
 $text: BlenderPro_thin;
 
 //font sizes

@@ -13,6 +13,10 @@
   src: url("../fonts/BlenderPro-Medium.ttf");
 }
 @font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
   font-family: "BlenderPro_thin";
   src: url("../fonts/BlenderPro-Thin.ttf");
 }
@@ -140,10 +144,10 @@ main .skills .skills_items .items_right_col {
 main .skills .skills_items .item {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 main .skills .skills_items .item img {
-  width: 35px;
+  width: 30px;
 }
 main .skills .skills_items .item .item_icon_container {
   display: flex;
@@ -152,7 +156,7 @@ main .skills .skills_items .item .item_icon_container {
   width: 40px;
 }
 main .skills .skills_items .item .item_icon_container .fas {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
 }
 main .skills .skills_items .item .item_span_container span {
@@ -206,13 +210,13 @@ main .why_it_works article .description {
 }
 main .why_it_works article .description h3 {
   font-family: BlenderPro_medium;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #000000;
   margin-bottom: 20px;
 }
 main .why_it_works article .description p {
   color: #000000;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_book;
   font-size: 1.3rem;
 }
 main .why_it_works article button {
@@ -292,6 +296,10 @@ footer .footer_container nav ul li a {
 @font-face {
   font-family: "BlenderPro_medium";
   src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
 }
 @font-face {
   font-family: "BlenderPro_thin";

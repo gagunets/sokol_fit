@@ -135,10 +135,10 @@ main {
       .item {
         display: flex;
         align-items: center;
-        margin: 10px 0;
+        margin: 15px 0;
 
         img {
-          width: 35px;
+          width: 30px;
         }
 
         .item_icon_container {
@@ -148,7 +148,7 @@ main {
           width: 40px;
 
           .fas {
-            font-size: 30px;
+            font-size: 25px;
             color: $main_color;
           }
         }
@@ -160,12 +160,10 @@ main {
             color: $main_color;
             font-family: $text;
             font-size: $s_font_size;
-            //text-transform: uppercase;
           }
 
           .colored_span {
             color: $accent_color;
-            //text-transform: uppercase;
             margin: 0;
           }
         }
@@ -202,14 +200,14 @@ main {
 
         h3 {
           font-family: $medium;
-          font-size: $xm_font_size;
+          font-size: $m_font_size;
           color: $second_color;
           margin-bottom: $margin;
         }
 
         p {
           color: $second_color;
-          font-family: $text;
+          font-family: $book;
           font-size: $s_font_size;
         }
       }
