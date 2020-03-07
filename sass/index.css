@@ -169,6 +169,7 @@ main .skills .skills_items .item .item_span_container .colored_span {
   margin: 0;
 }
 main .skills button {
+  width: 100%;
   border: none;
   outline: none;
   background-color: #15aabf;

@@ -170,6 +170,7 @@ main {
     }
 
     button {
+      width: 100%;
       @include button;
       margin-top: $margin*2;
     }
