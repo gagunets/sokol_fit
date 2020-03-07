@@ -76,7 +76,7 @@ main {
     }
 
     article {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url('../img/rings.jpg') center top;
       background-size: cover;
       padding: $padding*2 $padding;
@@ -168,6 +168,7 @@ main {
 
       img {
         width: 100%;
+        filter: brightness(50%);
       }
 
       .description {

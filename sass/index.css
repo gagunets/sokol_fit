@@ -78,7 +78,7 @@ main .workout img {
   display: none;
 }
 main .workout article {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rings.jpg") center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/rings.jpg") center top;
   background-size: cover;
   padding: 40px 20px;
   display: flex;
@@ -170,6 +170,7 @@ main .why_it_works article {
 }
 main .why_it_works article img {
   width: 100%;
+  filter: brightness(50%);
 }
 main .why_it_works article .description {
   padding: 20px 0;
