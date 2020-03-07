@@ -13,7 +13,7 @@ body {
 
 header {
   padding: $padding;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
   url("../img/run_man.jpg") center center;
   background-size: cover;
 
@@ -53,7 +53,7 @@ header {
   }
 
   .main_section {
-    margin: $margin * 5 auto;
+    margin-top: $margin*5;
 
     h1 {
       font-family: $header_upper;
@@ -107,7 +107,7 @@ main {
   }
 
   .skills {
-    background-color: #232323;
+    background-color: $gray_color;
     padding: $padding*2 $padding;
 
     display: flex;
@@ -119,12 +119,27 @@ main {
     }
 
     .skills_items {
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .items_left_col {
+        flex: 1;
+      }
+
+      .items_right_col {
+        flex: 1;
+      }
 
       .item {
         display: flex;
         align-items: center;
+        margin: 10px 0;
+
+        img {
+          width: 40px;
+        }
 
         .item_icon_container {
           display: flex;
@@ -133,7 +148,7 @@ main {
           width: 50px;
 
           .fas {
-            font-size: 30px;
+            font-size: 35px;
             color: $main_color;
           }
         }
@@ -141,14 +156,16 @@ main {
         .item_span_container {
 
           span {
-            margin-left: $margin;
+            margin-left: 10px;
             color: $main_color;
             font-family: $text;
             font-size: $s_font_size;
+            text-transform: uppercase;
           }
 
           .colored_span {
             color: $accent_color;
+            text-transform: uppercase;
             margin: 0;
           }
         }
@@ -157,8 +174,7 @@ main {
 
     button {
       @include button;
-      background-color: transparent;
-      margin-top: $margin;
+      margin-top: $margin*2;
     }
   }
 
@@ -211,7 +227,7 @@ main {
 }
 
 footer {
-  background-color: $second_color;
+  background-color: $gray_color;
   padding: $padding;
 
   .footer_container {

@@ -28,7 +28,7 @@ body {
 
 header {
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/run_man.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/run_man.jpg") center center;
   background-size: cover;
 }
 header nav {
@@ -59,7 +59,7 @@ header nav .navigation ul li a .fa-shopping-bag {
   color: #15aabf;
 }
 header .main_section {
-  margin: 100px auto;
+  margin-top: 100px;
 }
 header .main_section h1 {
   font-family: "Fugaz One", cursive;
@@ -126,12 +126,24 @@ main .skills h2 {
   text-transform: uppercase;
 }
 main .skills .skills_items {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .skills .skills_items .items_left_col {
+  flex: 1;
+}
+main .skills .skills_items .items_right_col {
+  flex: 1;
 }
 main .skills .skills_items .item {
   display: flex;
   align-items: center;
+  margin: 10px 0;
+}
+main .skills .skills_items .item img {
+  width: 40px;
 }
 main .skills .skills_items .item .item_icon_container {
   display: flex;
@@ -140,17 +152,19 @@ main .skills .skills_items .item .item_icon_container {
   width: 50px;
 }
 main .skills .skills_items .item .item_icon_container .fas {
-  font-size: 30px;
+  font-size: 35px;
   color: #ffffff;
 }
 main .skills .skills_items .item .item_span_container span {
-  margin-left: 20px;
+  margin-left: 10px;
   color: #ffffff;
   font-family: BlenderPro_thin;
   font-size: 1.3rem;
+  text-transform: uppercase;
 }
 main .skills .skills_items .item .item_span_container .colored_span {
   color: #15aabf;
+  text-transform: uppercase;
   margin: 0;
 }
 main .skills button {
@@ -163,8 +177,7 @@ main .skills button {
   padding: 10px 50px;
   cursor: pointer;
   letter-spacing: 2px;
-  background-color: transparent;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 main .skills button :hover {
   background-color: #1296a8;
@@ -235,7 +248,7 @@ main .why_it_works button :hover {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #232323;
   padding: 20px;
 }
 footer .footer_container {
