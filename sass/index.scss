@@ -138,17 +138,17 @@ main {
         margin: 10px 0;
 
         img {
-          width: 40px;
+          width: 35px;
         }
 
         .item_icon_container {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 50px;
+          width: 40px;
 
           .fas {
-            font-size: 35px;
+            font-size: 30px;
             color: $main_color;
           }
         }
@@ -160,12 +160,12 @@ main {
             color: $main_color;
             font-family: $text;
             font-size: $s_font_size;
-            text-transform: uppercase;
+            //text-transform: uppercase;
           }
 
           .colored_span {
             color: $accent_color;
-            text-transform: uppercase;
+            //text-transform: uppercase;
             margin: 0;
           }
         }

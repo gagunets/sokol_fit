@@ -103,7 +103,7 @@ main .workout article button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_medium;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -143,16 +143,16 @@ main .skills .skills_items .item {
   margin: 10px 0;
 }
 main .skills .skills_items .item img {
-  width: 40px;
+  width: 35px;
 }
 main .skills .skills_items .item .item_icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 40px;
 }
 main .skills .skills_items .item .item_icon_container .fas {
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff;
 }
 main .skills .skills_items .item .item_span_container span {
@@ -160,11 +160,9 @@ main .skills .skills_items .item .item_span_container span {
   color: #ffffff;
   font-family: BlenderPro_thin;
   font-size: 1.3rem;
-  text-transform: uppercase;
 }
 main .skills .skills_items .item .item_span_container .colored_span {
   color: #15aabf;
-  text-transform: uppercase;
   margin: 0;
 }
 main .skills button {
@@ -172,7 +170,7 @@ main .skills button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_medium;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -222,7 +220,7 @@ main .why_it_works article button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_medium;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -236,7 +234,7 @@ main .why_it_works button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_medium;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
