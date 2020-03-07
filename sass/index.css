@@ -147,7 +147,7 @@ main .skills .skills_items .item {
   margin: 15px 0;
 }
 main .skills .skills_items .item img {
-  width: 30px;
+  width: 25px;
 }
 main .skills .skills_items .item .item_icon_container {
   display: flex;
@@ -217,7 +217,7 @@ main .why_it_works article .description h3 {
 main .why_it_works article .description p {
   color: #000000;
   font-family: BlenderPro_book;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 main .why_it_works article button {
   border: none;
