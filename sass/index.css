@@ -153,7 +153,7 @@ main .skills .skills_items .item .item_icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 30px;
 }
 main .skills .skills_items .item .item_icon_container .fas {
   font-size: 25px;
