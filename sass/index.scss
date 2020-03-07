@@ -87,7 +87,6 @@ main {
 
       display: flex;
       flex-direction: column;
-      align-items: center;
 
       h2 {
         @include h2;
@@ -95,7 +94,7 @@ main {
 
       p {
         color: $main_color;
-        font-family: $text;
+        font-family: $book;
         font-size: $s_font_size;
         margin-bottom: $margin * 2;
       }
@@ -108,11 +107,11 @@ main {
 
   .skills {
     background-color: $gray_color;
-    padding: $padding*2 $padding;
+    padding: $padding $padding $padding*2
+    $padding;
 
     display: flex;
     flex-direction: column;
-    //align-items: center;
 
     h2 {
       @include h2;

@@ -87,7 +87,6 @@ main .workout article {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 main .workout article h2 {
   font-family: "Fugaz One", cursive;
@@ -98,7 +97,7 @@ main .workout article h2 {
 }
 main .workout article p {
   color: #ffffff;
-  font-family: BlenderPro_thin;
+  font-family: BlenderPro_book;
   font-size: 1.3rem;
   margin-bottom: 40px;
 }
@@ -118,7 +117,7 @@ main .workout article button :hover {
 }
 main .skills {
   background-color: #232323;
-  padding: 40px 20px;
+  padding: 20px 20px 40px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -217,7 +216,7 @@ main .why_it_works article .description h3 {
 main .why_it_works article .description p {
   color: #000000;
   font-family: BlenderPro_book;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main .why_it_works article button {
   border: none;
@@ -262,7 +261,7 @@ footer .footer_container span {
   flex: 1;
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 footer .footer_container .footer_img_box {
   flex: 2;
@@ -281,7 +280,7 @@ footer .footer_container nav ul li {
 footer .footer_container nav ul li a {
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
