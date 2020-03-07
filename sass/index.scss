@@ -2,7 +2,7 @@
 
 
 body {
-  max-width: 980px;
+  width: 100%;
   margin: auto;
 }
 
@@ -81,32 +81,160 @@ main {
       background-size: cover;
       padding: $padding*2 $padding;
 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       h2 {
-        font-family: $header;
-        font-size: $m_font_size;
-        color: $main_color;
-        margin-bottom: $margin;
+        @include h2;
       }
 
       p {
         color: $main_color;
         font-family: $text;
-        font-size: $s_font_size;
+        font-size: $m_font_size;
         margin-bottom: $margin * 2;
       }
 
       button {
-        border: none;
-        outline: none;
-        background-color: $accent_color;
-        color: $main_color;
-        font-family: $header;
-        font-size: $s_font_size;
-        padding: 10px 40px;
-        cursor: pointer;
+        @include button;
+      }
+    }
+  }
 
-        :hover {
-          background-color: darken($accent_color, 5%);
+  .skills {
+    background-color: $second_color;
+    padding: $padding*2 $padding;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      @include h2;
+    }
+
+    .skills_items {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        display: flex;
+        align-items: center;
+
+        .item_icon_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+
+          .fas {
+            font-size: 30px;
+            color: $main_color;
+          }
+        }
+
+        .item_span_container {
+
+          span {
+            margin-left: $margin;
+            color: $main_color;
+            font-family: $text;
+            font-size: $m_font_size;
+          }
+
+          .colored_span {
+            color: $accent_color;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .why_it_works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding*2 $padding;
+
+    h2 {
+      @include h2;
+      color: $second_color;
+    }
+
+    article {
+      margin-bottom: $margin*2;
+
+      img {
+        width: 100%;
+      }
+
+      .description {
+        padding: $padding 0;
+
+        h3 {
+          font-family: $medium;
+          font-size: $m_font_size;
+          color: $second_color;
+          margin-bottom: $margin;
+        }
+
+        p {
+          color: $second_color;
+          font-family: $text;
+          font-size: $s_font_size;
+        }
+      }
+
+      button {
+        @include button;
+      }
+    }
+
+    button {
+      @include button;
+      margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  background-color: $second_color;
+  padding: $padding;
+
+  .footer_container {
+    margin: $margin 0;
+    display: flex;
+    align-items: center;
+
+    span {
+      flex: 1;
+      color: $main_color;
+      font-family: $text;
+      font-size: $xs_font_size;
+    }
+
+    .footer_img_box {
+      flex: 2;
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    nav {
+      flex: 1;
+      text-align: center;
+
+      ul li {
+        list-style-type: none;
+
+        a {
+          color: $main_color;
+          font-family: $text;
+          font-size: $xs_font_size;
         }
       }
     }

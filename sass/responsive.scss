@@ -16,8 +16,8 @@
     margin: auto;
   }
 
-  main, footer {
-    max-width: 980px;
+  .workout, .skills, .about_crossfit, {
+    max-width: $max_width;
     margin: auto;
   }
 
@@ -48,7 +48,7 @@
   }
 
   header .main_section {
-    max-width: 980px;
+    max-width: $max_width;
     margin: $margin * 7 auto;
 
     .main_header h1 {
@@ -60,7 +60,6 @@
     .workout {
       display: flex;
       flex-direction: row;
-      margin-bottom: $margin * 2;
 
       .image {
         flex: 1;
@@ -72,7 +71,11 @@
       article {
         background: none;
         flex: 1;
-        margin: $margin * 2;
+        display: block;
+
+        h2, p, button {
+          margin-left: $margin * 4;
+        }
 
         h2 {
           color: $second_color;

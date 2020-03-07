@@ -19,7 +19,7 @@
   src: url("../fonts/BlenderPro-Thin.ttf");
 }
 body {
-  max-width: 980px;
+  width: 100%;
   margin: auto;
 }
 
@@ -81,17 +81,20 @@ main .workout article {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rings.jpg") center top;
   background-size: cover;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .workout article h2 {
-  font-family: BlenderPro_bold;
+  font-family: BlenderPro_heavy;
   font-size: 2rem;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 main .workout article p {
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 main .workout article button {
@@ -101,11 +104,150 @@ main .workout article button {
   color: #ffffff;
   font-family: BlenderPro_bold;
   font-size: 1.3rem;
-  padding: 10px 40px;
+  padding: 10px 50px;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 main .workout article button :hover {
   background-color: #1296a8;
+}
+main .skills {
+  background-color: #000000;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .skills h2 {
+  font-family: BlenderPro_heavy;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+main .skills .skills_items {
+  display: flex;
+  flex-direction: column;
+}
+main .skills .skills_items .item {
+  display: flex;
+  align-items: center;
+}
+main .skills .skills_items .item .item_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+main .skills .skills_items .item .item_icon_container .fas {
+  font-size: 30px;
+  color: #ffffff;
+}
+main .skills .skills_items .item .item_span_container span {
+  margin-left: 20px;
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 2rem;
+}
+main .skills .skills_items .item .item_span_container .colored_span {
+  color: #15aabf;
+  margin: 0;
+}
+main .why_it_works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+main .why_it_works h2 {
+  font-family: BlenderPro_heavy;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  color: #000000;
+}
+main .why_it_works article {
+  margin-bottom: 40px;
+}
+main .why_it_works article img {
+  width: 100%;
+}
+main .why_it_works article .description {
+  padding: 20px 0;
+}
+main .why_it_works article .description h3 {
+  font-family: BlenderPro_medium;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+main .why_it_works article .description p {
+  color: #000000;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+main .why_it_works article button {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_bold;
+  font-size: 1.3rem;
+  padding: 10px 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+main .why_it_works article button :hover {
+  background-color: #1296a8;
+}
+main .why_it_works button {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_bold;
+  font-size: 1.3rem;
+  padding: 10px 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+main .why_it_works button :hover {
+  background-color: #1296a8;
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px;
+}
+footer .footer_container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+footer .footer_container span {
+  flex: 1;
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 1rem;
+}
+footer .footer_container .footer_img_box {
+  flex: 2;
+  text-align: center;
+}
+footer .footer_container .footer_img_box img {
+  width: 100px;
+}
+footer .footer_container nav {
+  flex: 1;
+  text-align: center;
+}
+footer .footer_container nav ul li {
+  list-style-type: none;
+}
+footer .footer_container nav ul li a {
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 1rem;
 }
 
 @font-face {
@@ -140,7 +282,7 @@ main .workout article button :hover {
     margin: auto;
   }
 
-  main, footer {
+  .workout, .skills, .about_crossfit {
     max-width: 980px;
     margin: auto;
   }
@@ -178,7 +320,6 @@ main .workout article button :hover {
   main .workout {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
   }
   main .workout .image {
     flex: 1;
@@ -189,7 +330,10 @@ main .workout article button :hover {
   main .workout article {
     background: none;
     flex: 1;
-    margin: 40px;
+    display: block;
+  }
+  main .workout article h2, main .workout article p, main .workout article button {
+    margin-left: 80px;
   }
   main .workout article h2 {
     color: #000000;
