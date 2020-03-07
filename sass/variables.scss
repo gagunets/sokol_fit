@@ -1,8 +1,6 @@
 //fonts URLs
-@font-face {
-  font-family: "Blockletter";
-  src: url('../fonts/Blockletter.otf');
-}
+
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
 
 @font-face {
   font-family: "BlenderPro_heavy";
@@ -29,6 +27,7 @@
   font-size: $xm_font_size;
   color: $main_color;
   margin-bottom: $margin * 2;
+  text-transform: uppercase;
 }
 
 @mixin button {
@@ -36,7 +35,7 @@
   outline: none;
   background-color: $accent_color;
   color: $main_color;
-  font-family: $header;
+  font-family: $text;
   font-size: $s_font_size;
   padding: 10px 50px;
   cursor: pointer;
@@ -57,7 +56,7 @@ $second_color: #000000;
 $accent_color: #15aabf;
 
 //fonts
-$header_upper: BlenderPro_heavy;
+$header_upper: 'Fugaz One', cursive;
 $header: BlenderPro_bold;
 $medium: BlenderPro_medium;
 $text: BlenderPro_thin;

@@ -12,8 +12,11 @@ body {
 }
 
 header {
-  background-color: $second_color;
   padding: $padding;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/run_man.jpg") center center;
+  background-size: cover;
+
 
   nav {
     display: flex;
@@ -55,6 +58,7 @@ header {
     h1 {
       font-family: $header_upper;
       font-size: $m_font_size;
+      text-transform: uppercase;
       color: $main_color;
       margin-bottom: $margin;
     }
@@ -103,12 +107,12 @@ main {
   }
 
   .skills {
-    background-color: $second_color;
+    background-color: #232323;
     padding: $padding*2 $padding;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
 
     h2 {
       @include h2;
@@ -150,6 +154,12 @@ main {
         }
       }
     }
+
+    button {
+      @include button;
+      background-color: transparent;
+      margin-top: $margin;
+    }
   }
 
   .why_it_works {
@@ -168,7 +178,7 @@ main {
 
       img {
         width: 100%;
-        filter: brightness(50%);
+        filter: brightness(90%);
       }
 
       .description {
@@ -236,6 +246,7 @@ footer {
           color: $main_color;
           font-family: $text;
           font-size: $xs_font_size;
+          text-decoration: none;
         }
       }
     }

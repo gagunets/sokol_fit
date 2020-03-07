@@ -1,7 +1,5 @@
-@font-face {
-  font-family: "Blockletter";
-  src: url("../fonts/Blockletter.otf");
-}
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
 @font-face {
   font-family: "BlenderPro_heavy";
   src: url("../fonts/BlenderPro-Heavy.ttf");
@@ -29,8 +27,9 @@ body {
 }
 
 header {
-  background-color: #000000;
   padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/run_man.jpg") center center;
+  background-size: cover;
 }
 header nav {
   display: flex;
@@ -63,8 +62,9 @@ header .main_section {
   margin: 100px auto;
 }
 header .main_section h1 {
-  font-family: BlenderPro_heavy;
+  font-family: "Fugaz One", cursive;
   font-size: 2rem;
+  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -86,10 +86,11 @@ main .workout article {
   align-items: center;
 }
 main .workout article h2 {
-  font-family: BlenderPro_heavy;
+  font-family: "Fugaz One", cursive;
   font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 main .workout article p {
   color: #ffffff;
@@ -102,7 +103,7 @@ main .workout article button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_bold;
+  font-family: BlenderPro_thin;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -112,17 +113,17 @@ main .workout article button :hover {
   background-color: #1296a8;
 }
 main .skills {
-  background-color: #000000;
+  background-color: #232323;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 main .skills h2 {
-  font-family: BlenderPro_heavy;
+  font-family: "Fugaz One", cursive;
   font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 main .skills .skills_items {
   display: flex;
@@ -152,6 +153,22 @@ main .skills .skills_items .item .item_span_container .colored_span {
   color: #15aabf;
   margin: 0;
 }
+main .skills button {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+  padding: 10px 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+main .skills button :hover {
+  background-color: #1296a8;
+}
 main .why_it_works {
   display: flex;
   flex-direction: column;
@@ -159,10 +176,11 @@ main .why_it_works {
   padding: 40px 20px;
 }
 main .why_it_works h2 {
-  font-family: BlenderPro_heavy;
+  font-family: "Fugaz One", cursive;
   font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
+  text-transform: uppercase;
   color: #000000;
 }
 main .why_it_works article {
@@ -170,7 +188,7 @@ main .why_it_works article {
 }
 main .why_it_works article img {
   width: 100%;
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
 main .why_it_works article .description {
   padding: 20px 0;
@@ -191,7 +209,7 @@ main .why_it_works article button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_bold;
+  font-family: BlenderPro_thin;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -205,7 +223,7 @@ main .why_it_works button {
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
-  font-family: BlenderPro_bold;
+  font-family: BlenderPro_thin;
   font-size: 1.3rem;
   padding: 10px 50px;
   cursor: pointer;
@@ -249,12 +267,9 @@ footer .footer_container nav ul li a {
   color: #ffffff;
   font-family: BlenderPro_thin;
   font-size: 1rem;
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: "Blockletter";
-  src: url("../fonts/Blockletter.otf");
-}
 @font-face {
   font-family: "BlenderPro_heavy";
   src: url("../fonts/BlenderPro-Heavy.ttf");
