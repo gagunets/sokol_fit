@@ -179,8 +179,7 @@ main {
   .why_it_works {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: $padding*2 $padding;
+    padding: $padding*2 $padding $padding $padding;
 
     h2 {
       @include h2;
@@ -188,7 +187,7 @@ main {
     }
 
     article {
-      margin-bottom: $margin*2;
+      margin-bottom: $margin;
 
       img {
         width: 100%;
@@ -203,6 +202,7 @@ main {
           font-size: $m_font_size;
           color: $second_color;
           margin-bottom: $margin;
+          letter-spacing: -1px;
         }
 
         p {
@@ -214,12 +214,10 @@ main {
 
       button {
         @include button;
+        width: 50%;
+        padding: 10px;
+        margin: 10px 0;
       }
-    }
-
-    button {
-      @include button;
-      margin: 0 auto;
     }
   }
 }

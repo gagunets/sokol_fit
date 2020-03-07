@@ -187,8 +187,7 @@ main .skills button :hover {
 main .why_it_works {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
 }
 main .why_it_works h2 {
   font-family: "Fugaz One", cursive;
@@ -199,7 +198,7 @@ main .why_it_works h2 {
   color: #000000;
 }
 main .why_it_works article {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 main .why_it_works article img {
   width: 100%;
@@ -213,6 +212,7 @@ main .why_it_works article .description h3 {
   font-size: 2rem;
   color: #000000;
   margin-bottom: 20px;
+  letter-spacing: -1px;
 }
 main .why_it_works article .description p {
   color: #000000;
@@ -229,23 +229,11 @@ main .why_it_works article button {
   padding: 10px 50px;
   cursor: pointer;
   letter-spacing: 2px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
 }
 main .why_it_works article button :hover {
-  background-color: #1296a8;
-}
-main .why_it_works button {
-  border: none;
-  outline: none;
-  background-color: #15aabf;
-  color: #ffffff;
-  font-family: BlenderPro_medium;
-  font-size: 1.3rem;
-  padding: 10px 50px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  margin: 0 auto;
-}
-main .why_it_works button :hover {
   background-color: #1296a8;
 }
 
