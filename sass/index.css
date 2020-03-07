@@ -87,14 +87,14 @@ main .workout article {
 }
 main .workout article h2 {
   font-family: BlenderPro_heavy;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
 }
 main .workout article p {
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 40px;
 }
 main .workout article button {
@@ -120,7 +120,7 @@ main .skills {
 }
 main .skills h2 {
   font-family: BlenderPro_heavy;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -146,7 +146,7 @@ main .skills .skills_items .item .item_span_container span {
   margin-left: 20px;
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 main .skills .skills_items .item .item_span_container .colored_span {
   color: #15aabf;
@@ -160,7 +160,7 @@ main .why_it_works {
 }
 main .why_it_works h2 {
   font-family: BlenderPro_heavy;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #ffffff;
   margin-bottom: 40px;
   color: #000000;
@@ -176,7 +176,7 @@ main .why_it_works article .description {
 }
 main .why_it_works article .description h3 {
   font-family: BlenderPro_medium;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #000000;
   margin-bottom: 20px;
 }

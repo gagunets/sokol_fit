@@ -92,7 +92,7 @@ main {
       p {
         color: $main_color;
         font-family: $text;
-        font-size: $m_font_size;
+        font-size: $s_font_size;
         margin-bottom: $margin * 2;
       }
 
@@ -140,7 +140,7 @@ main {
             margin-left: $margin;
             color: $main_color;
             font-family: $text;
-            font-size: $m_font_size;
+            font-size: $s_font_size;
           }
 
           .colored_span {
@@ -175,7 +175,7 @@ main {
 
         h3 {
           font-family: $medium;
-          font-size: $m_font_size;
+          font-size: $xm_font_size;
           color: $second_color;
           margin-bottom: $margin;
         }
