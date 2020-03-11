@@ -72,35 +72,6 @@ header {
 }
 
 main {
-
-  .workout {
-
-    article {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(35, 35, 35, 0.7)),
-      url('../img/rings.jpg') center top;
-      background-size: cover;
-      padding: $padding*2 $padding;
-
-      display: flex;
-      flex-direction: column;
-
-      h2 {
-        @include h2;
-      }
-
-      p {
-        color: $main_color;
-        font-family: $book;
-        font-size: $s_font_size;
-        margin-bottom: $margin * 2;
-      }
-
-      button {
-        @include button;
-      }
-    }
-  }
-
   .skills {
     background-color: $gray_color;
     padding: $padding $padding $padding*2
@@ -173,7 +144,6 @@ main {
       margin-top: $margin*2;
     }
   }
-
   .why_it_works {
     display: flex;
     flex-direction: column;
@@ -217,6 +187,35 @@ main {
           padding: 10px;
           margin: 20px 0 0 0;
         }
+      }
+    }
+  }
+  .workout {
+
+    article {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(35, 35, 35, 0.7)),
+      url('../img/rings.jpg') center top;
+      background-size: cover;
+      padding: $padding*2 $padding;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        @include h2;
+      }
+
+      p {
+        color: $main_color;
+        font-family: $book;
+        font-size: $s_font_size;
+        margin-bottom: $margin * 2;
+      }
+
+      button {
+        @include button;
+        width: 100%;
       }
     }
   }
