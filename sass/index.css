@@ -200,7 +200,7 @@ main .why_it_works article .description button {
   margin: 20px 0 0 0;
 }
 main .workout article {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(35, 35, 35, 0.7)), url("../img/rings.jpg") center top;
+  background: linear-gradient(rgba(35, 35, 35, 0.7), rgba(35, 35, 35, 0.7)), url("../img/rings.jpg") center top;
   background-size: cover;
   padding: 40px 20px;
   display: flex;
