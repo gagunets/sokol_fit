@@ -286,6 +286,9 @@ footer .footer_container .footer_social .social_icons {
   width: 100%;
   margin-bottom: 20px;
 }
+footer .footer_container .footer_social .social_icons a i:hover {
+  color: #15aabf;
+}
 footer .footer_container .footer_social .social_icons i {
   font-size: 20px;
   color: #ffffff;
@@ -368,6 +371,7 @@ main .skills article button {
   footer .footer_container .footer_social {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
   }
   footer .footer_container .footer_social .social_icons {
