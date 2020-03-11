@@ -34,10 +34,6 @@
           margin-left: $margin;
           list-style-type: none;
           text-align: right;
-
-          a .fa-shopping-bag {
-            color: $accent_color;
-          }
         }
       }
 
@@ -109,6 +105,8 @@
   }
 
   main {
+    background: lighten($gray_color, 83%);
+
     .skills {
       display: flex;
       align-items: center;

@@ -252,10 +252,13 @@ footer {
 
         a {
           color: $main_color;
-
           font-family: $text;
           font-size: $s_font_size;
           text-decoration: none;
+
+          .fa-shopping-bag {
+            color: $accent_color;
+          }
         }
       }
 
