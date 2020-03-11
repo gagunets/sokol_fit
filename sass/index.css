@@ -32,7 +32,7 @@ body {
 
 header {
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/run_man.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/web/run_man_web.jpg") center center;
   background-size: cover;
 }
 header nav {
@@ -79,7 +79,7 @@ header .main_section p {
 }
 
 main .skills {
-  background-color: #232323;
+  background-color: #222222;
   padding: 20px 20px 40px 20px;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@ main .why_it_works article .description button {
   margin: 20px 0 0 0;
 }
 main .workout article {
-  background: linear-gradient(rgba(35, 35, 35, 0.7), rgba(35, 35, 35, 0.7)), url("../img/rings.jpg") center top;
+  background: linear-gradient(rgba(35, 35, 35, 0.7), rgba(35, 35, 35, 0.7)), url("../img/web/rings_web.jpg") center top;
   background-size: cover;
   padding: 40px 20px;
   display: flex;
@@ -234,7 +234,7 @@ main .workout article button {
 }
 
 footer {
-  background-color: #232323;
+  background-color: #222222;
   padding: 20px;
 }
 footer .footer_container {
@@ -444,7 +444,7 @@ main .skills article button {
   }
 
   main {
-    background: #f7f7f7;
+    background: #f6f6f6;
   }
   main .skills {
     display: flex;
@@ -491,7 +491,7 @@ main .skills article button {
     max-width: 1380px;
     margin: 0 auto;
     padding: 80px 80px;
-    background: #f7f7f7;
+    background: #f6f6f6;
   }
   main .why_it_works h2 {
     margin-bottom: 80px;

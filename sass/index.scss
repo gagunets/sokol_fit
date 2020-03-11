@@ -14,7 +14,7 @@ body {
 header {
   padding: $padding;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-  url("../img/run_man.jpg") center center;
+  url("../img/web/run_man_web.jpg") center center;
   background-size: cover;
 
 
@@ -194,7 +194,7 @@ main {
 
     article {
       background: linear-gradient(rgba(35, 35, 35, 0.7), rgba(35, 35, 35, 0.7)),
-      url('../img/rings.jpg') center top;
+      url('../img/web/rings_web.jpg') center top;
       background-size: cover;
       padding: $padding*2 $padding;
 
