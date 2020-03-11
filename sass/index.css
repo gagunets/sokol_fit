@@ -78,11 +78,8 @@ header .main_section p {
   font-size: 1.3rem;
 }
 
-main .workout img {
-  display: none;
-}
 main .workout article {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/rings.jpg") center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(35, 35, 35, 0.7)), url("../img/rings.jpg") center top;
   background-size: cover;
   padding: 40px 20px;
   display: flex;
@@ -108,12 +105,9 @@ main .workout article button {
   color: #ffffff;
   font-family: BlenderPro_medium;
   font-size: 1.3rem;
-  padding: 10px 50px;
+  padding: 10px;
   cursor: pointer;
   letter-spacing: 2px;
-}
-main .workout article button :hover {
-  background-color: #1296a8;
 }
 main .skills {
   background-color: #232323;
@@ -132,11 +126,8 @@ main .skills .skills_items {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
-main .skills .skills_items .items_left_col {
-  flex: 1;
-}
+main .skills .skills_items .items_left_col,
 main .skills .skills_items .items_right_col {
   flex: 1;
 }
@@ -145,7 +136,12 @@ main .skills .skills_items .item {
   align-items: center;
   margin: 15px 0;
 }
-main .skills .skills_items .item img {
+main .skills .skills_items .item .item_img_icon {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+main .skills .skills_items .item .item_img_icon img {
   width: 25px;
 }
 main .skills .skills_items .item .item_icon_container {
@@ -158,11 +154,13 @@ main .skills .skills_items .item .item_icon_container .fas {
   font-size: 25px;
   color: #ffffff;
 }
-main .skills .skills_items .item .item_span_container span {
-  margin-left: 10px;
-  color: #ffffff;
+main .skills .skills_items .item .item_span_container {
   font-family: BlenderPro_thin;
   font-size: 1.3rem;
+}
+main .skills .skills_items .item .item_span_container .verb_span {
+  margin-left: 10px;
+  color: #ffffff;
 }
 main .skills .skills_items .item .item_span_container .colored_span {
   color: #15aabf;
@@ -176,13 +174,10 @@ main .skills button {
   color: #ffffff;
   font-family: BlenderPro_medium;
   font-size: 1.3rem;
-  padding: 10px 50px;
+  padding: 10px;
   cursor: pointer;
   letter-spacing: 2px;
   margin-top: 40px;
-}
-main .skills button :hover {
-  background-color: #1296a8;
 }
 main .why_it_works {
   display: flex;
@@ -219,22 +214,19 @@ main .why_it_works article .description p {
   font-family: BlenderPro_book;
   font-size: 1.1rem;
 }
-main .why_it_works article button {
+main .why_it_works article .description button {
   border: none;
   outline: none;
   background-color: #15aabf;
   color: #ffffff;
   font-family: BlenderPro_medium;
   font-size: 1.3rem;
-  padding: 10px 50px;
+  padding: 10px;
   cursor: pointer;
   letter-spacing: 2px;
   width: 50%;
   padding: 10px;
-  margin: 10px 0;
-}
-main .why_it_works article button :hover {
-  background-color: #1296a8;
+  margin: 20px 0 0 0;
 }
 
 footer {
@@ -244,33 +236,67 @@ footer {
 footer .footer_container {
   margin: 20px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-footer .footer_container span {
-  flex: 1;
-  color: #ffffff;
-  font-family: BlenderPro_thin;
-  font-size: 1.1rem;
-}
-footer .footer_container .footer_img_box {
-  flex: 2;
-  text-align: center;
-}
-footer .footer_container .footer_img_box img {
-  width: 100px;
+  justify-content: space-between;
 }
 footer .footer_container nav {
-  flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer_container nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
 }
 footer .footer_container nav ul li {
   list-style-type: none;
+  text-align: right;
 }
 footer .footer_container nav ul li a {
   color: #ffffff;
   font-family: BlenderPro_thin;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-decoration: none;
+}
+footer .footer_container nav img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer .footer_container .footer_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_container .footer_social .social_icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer_container .footer_social .social_icons i {
+  font-size: 20px;
+  color: #ffffff;
+}
+footer .footer_container .footer_social .social_icons .fa-facebook-f {
+  margin: 0 20px;
+}
+footer .footer_container .footer_social .credits {
+  text-align: center;
+}
+footer .footer_container .footer_social .credits span, footer .footer_container .footer_social .credits p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: BlenderPro_thin;
+  font-size: 1.1rem;
+}
+footer .footer_container .footer_social .credits a {
+  text-decoration: none;
+  color: #15aabf;
 }
 
 @font-face {
@@ -298,16 +324,87 @@ footer .footer_container nav ul li a {
     width: 150px;
     margin: 0;
   }
+
+  main .workout article button,
+main .skills article button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 50%;
+  }
+
+  footer .footer_container {
+    max-width: 1380px;
+    margin: 20px auto;
+  }
+  footer .footer_container nav {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_container nav ul {
+    display: flex;
+    justify-content: unset;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  footer .footer_container nav ul li {
+    margin-left: 20px;
+    list-style-type: none;
+    text-align: right;
+  }
+  footer .footer_container nav ul li a .fa-shopping-bag {
+    color: #15aabf;
+  }
+  footer .footer_container .footer_social {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .footer_container .footer_social .social_icons {
+    width: auto;
+    margin-bottom: 0;
+  }
+  footer .footer_container .footer_social .credits {
+    text-align: left;
+  }
 }
 @media (min-width: 750px) {
   body {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
   }
 
-  .workout, .skills, .about_crossfit {
-    max-width: 980px;
-    margin: auto;
+  main .workout article button,
+main .skills article button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 300px;
+  }
+
+  main .why_it_works article .description button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 100%;
   }
 
   header nav {
@@ -316,6 +413,7 @@ footer .footer_container nav ul li a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 60px;
   }
   header nav .mobile_logo {
     display: none;
@@ -323,49 +421,134 @@ footer .footer_container nav ul li a {
   header nav .desktop_logo {
     display: block;
     width: 110px;
-    margin-left: 20px;
-  }
-  header nav ul {
-    margin-right: 20px;
   }
   header nav ul li {
     margin-left: 20px;
   }
 
   header .main_section {
-    max-width: 980px;
+    max-width: 1380px;
     margin: 140px auto;
+    padding: 0 60px;
   }
   header .main_section .main_header h1 {
     font-size: 3rem;
   }
 
-  main .workout {
+  main .skills {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  main .skills article {
+    max-width: 1380px;
+    text-align: center;
+    width: 90%;
+  }
+  main .skills article .skills_items div {
     display: flex;
     flex-direction: row;
   }
-  main .workout .image {
+  main .skills article .skills_items div .item {
     flex: 1;
-    background-image: url(../img/rings.jpg);
-    background-position: left;
-    background-size: cover;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  main .skills article .skills_items div .item .item_img_icon {
+    height: 35px;
+  }
+  main .skills article .skills_items div .item .item_img_icon img {
+    width: 35px;
+  }
+  main .skills article .skills_items div .item .item_icon_container {
+    margin-bottom: 10px;
+  }
+  main .skills article .skills_items div .item .item_icon_container .fas {
+    font-size: 35px;
+  }
+  main .skills article .skills_items div .item .item_span_container .verb_span {
+    margin-left: 0;
+  }
+  main .skills article .skills_items div .item .item_span_container .colored_span {
+    padding: 0 5px;
+  }
+  main .skills article button:hover {
+    background-color: #1296a8;
+  }
+  main .why_it_works {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 80px 80px;
+    background: #f7f7f7;
+  }
+  main .why_it_works h2 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  main .why_it_works article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image article";
+    align-items: center;
+    margin: 0;
+    background: #ffffff;
+  }
+  main .why_it_works article img {
+    grid-area: image;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  main .why_it_works article .description {
+    grid-area: article;
+    justify-self: center;
+    width: 70%;
+  }
+  main .why_it_works article .description h3 {
+    font-size: 2.5rem;
+  }
+  main .why_it_works article .description p {
+    font-size: 1.3rem;
+  }
+  main .why_it_works article .description button:hover {
+    background-color: #1296a8;
+  }
+  main .why_it_works .reverse > img {
+    grid-column: 2;
+    justify-self: end;
+  }
+  main .why_it_works .reverse > .description {
+    grid-column: 1;
+    margin-left: 0;
+    margin-right: 20px;
+    width: 70%;
+    justify-self: center;
   }
   main .workout article {
-    background: none;
-    flex: 1;
-    display: block;
-  }
-  main .workout article h2, main .workout article p, main .workout article button {
-    margin-left: 80px;
+    align-items: center;
+    padding: 60px 0;
   }
   main .workout article h2 {
-    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   main .workout article p {
-    color: #000000;
+    font-size: 1.3rem;
   }
   main .workout article button:hover {
     background-color: #1296a8;
+  }
+
+  footer .footer_container {
+    margin: 40px auto;
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1000px) {
+  main .why_it_works article .description button {
+    width: 300px;
   }
 }
 

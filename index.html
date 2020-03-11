@@ -40,46 +40,58 @@
             <div class="skills_items">
                 <div class="items_left_col">
                     <div class="item">
-                        <div class="item_icon_container"><i class="fas fa-heartbeat"></i></div>
+                        <div class="item_icon_container">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
                         <div class="item_span_container">
-                            <span>Be </span>
+                            <span class="verb_span">Be </span>
                             <span class="colored_span"> healthier</span>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item_icon_container"><i class="fas fa-running"></i></div>
+                        <div class="item_icon_container">
+                            <i class="fas fa-running"></i>
+                        </div>
                         <div class="item_span_container">
-                            <span>Move </span>
+                            <span class="verb_span">Move </span>
                             <span class="colored_span"> faster</span>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item_icon_container"><img src="img/dumbbell_white.svg" alt="Dumbbell icon"></div>
+                        <div class="item_icon_container">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
                         <div class="item_span_container">
-                            <span>Grow </span>
-                            <span class="colored_span"> stronger</span>
+                            <span class="verb_span">Eat </span>
+                            <span class="colored_span"> healthy</span>
                         </div>
                     </div>
                 </div>
                 <div class="items_right_col">
                     <div class="item">
-                        <div class="item_icon_container"><i class="fas fa-drumstick-bite"></i></div>
+                        <div class="item_icon_container item_img_icon">
+                            <img src="img/dumbbell_white.svg" alt="Dumbbell icon">
+                        </div>
                         <div class="item_span_container">
-                            <span>Eat </span>
-                            <span class="colored_span"> healthy</span>
+                            <span class="verb_span">Grow </span>
+                            <span class="colored_span"> stronger</span>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item_icon_container"><i class="fas fa-swimmer"></i></div>
+                        <div class="item_icon_container">
+                            <i class="fas fa-swimmer"></i>
+                        </div>
                         <div class="item_span_container">
-                            <span>Try </span>
+                            <span class="verb_span">Try </span>
                             <span class="colored_span"> new</span>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item_icon_container"><i class="fas fa-trophy"></i></div>
+                        <div class="item_icon_container">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <div class="item_span_container">
-                            <span></span>
+                            <span class="verb_span"></span>
                             <span class="colored_span">Compete</span>
                         </div>
                     </div>
@@ -101,10 +113,10 @@
                     CrossFit workouts can be adapted for people at
                     any age and level of fitness.
                 </p>
+                <button>Get one</button>
             </div>
-            <button>Get one</button>
         </article>
-        <article>
+        <article class="reverse">
             <img src="img/food.jpg" alt="a plate with fruit">
             <div class="description">
                 <h3>The lifestyle</h3>
@@ -124,12 +136,11 @@
                     CrossFit uses safe, effective and efficient
                     movements similar to those you use every day in life.
                 </p>
+                <button>Learn more</button>
             </div>
-            <button>Learn more</button>
         </article>
     </section>
     <div class="workout">
-        <div class="image"></div>
         <article>
             <h2>Workout of the day</h2>
             <p>
@@ -145,17 +156,26 @@
 </main>
 <footer>
     <div class="footer_container">
-        <span>©2020 SOKOL FIT</span>
-        <div class="footer_img_box">
-            <img src="img/logo_white.png" alt="A logo of the 'Sokol Fit' brand">
-        </div>
         <nav>
+            <img src="img/logo_mobile.png" alt="A logo of the 'Sokol Fit' brand">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contacts</a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
             </ul>
         </nav>
+        <div class="footer_social">
+            <div class="social_icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="credits">
+                <span>©2020 Sokol Fit</span>
+                <p>Developed by <a href="">Danylo Sokolov</a></p>
+            </div>
+        </div>
     </div>
 </footer>
 

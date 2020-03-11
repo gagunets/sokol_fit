@@ -35,6 +35,7 @@
   text-transform: uppercase;
 }
 
+
 @mixin button {
   border: none;
   outline: none;
@@ -42,13 +43,9 @@
   color: $main_color;
   font-family: $medium;
   font-size: $s_font_size;
-  padding: 10px 50px;
+  padding: 10px;
   cursor: pointer;
   letter-spacing: 2px;
-
-  :hover {
-    background-color: darken($accent_color, 5%);
-  }
 }
 
 //margin/padding
@@ -70,10 +67,11 @@ $text: BlenderPro_thin;
 
 //font sizes
 $l_font_size: 3rem;
+$xl_font_size: 2.5rem;
 $m_font_size: 2rem;
 $xm_font_size: 1.6rem;
 $s_font_size: 1.3rem;
 $xs_font_size: 1.1rem;
 
 //max-width
-$max_width: 980px;
+$max_width: 1380px;

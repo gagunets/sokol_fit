@@ -8,17 +8,72 @@
     width: 150px;
     margin: 0;
   }
+
+  main .workout article button,
+  main .skills article button {
+    @include button;
+    width: 50%;
+  }
+
+  footer {
+    .footer_container {
+      max-width: $max_width;
+      margin: $margin auto;
+
+      nav {
+        display: flex;
+        flex-direction: row;
+
+        ul {
+          display: flex;
+          justify-content: unset;
+          width: auto;
+          margin-bottom: $margin;
+        }
+        ul li {
+          margin-left: $margin;
+          list-style-type: none;
+          text-align: right;
+
+          a .fa-shopping-bag {
+            color: $accent_color;
+          }
+        }
+      }
+
+      .footer_social {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+
+        .social_icons {
+          width: auto;
+          margin-bottom: 0;
+        }
+
+        .credits {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 750px) {
   body {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
   }
 
-  .workout, .skills, .about_crossfit, {
-    max-width: $max_width;
-    margin: auto;
+  main .workout article button,
+  main .skills article button {
+    @include button;
+    width: 300px;
+  }
+
+  main .why_it_works article .description button {
+    @include button;
+    width: 100%;
   }
 
   header nav {
@@ -27,6 +82,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 $padding * 3;
 
     .mobile_logo {
       display: none;
@@ -35,21 +91,17 @@
     .desktop_logo {
       display: block;
       width: 110px;
-      margin-left: $margin;
     }
 
-    ul {
-      margin-right: $margin;
-
-      li {
+    ul li {
         margin-left: $margin;
-      }
     }
   }
 
   header .main_section {
     max-width: $max_width;
     margin: $margin * 7 auto;
+    padding: 0 $padding * 3;
 
     .main_header h1 {
       font-size: $l_font_size;
@@ -57,32 +109,136 @@
   }
 
   main {
-    .workout {
+    .skills {
       display: flex;
-      flex-direction: row;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: $padding * 4;
 
-      .image {
-        flex: 1;
-        background-image: url(../img/rings.jpg);
-        background-position: left;
-        background-size: cover;
+      article {
+        max-width: $max_width;
+        text-align: center;
+        width: 90%;
+
+        .skills_items {
+          div {
+            display: flex;
+            flex-direction: row;
+
+            .item {
+              flex: 1;
+              margin-bottom: $margin;
+              flex-direction: column;
+
+              .item_img_icon {
+                height: 35px;
+
+                img {
+                  width: 35px;
+                }
+              }
+
+              .item_icon_container {
+                margin-bottom: 10px;
+
+                .fas {
+                  font-size: 35px;
+                }
+              }
+
+              .item_span_container {
+                .verb_span {
+                  margin-left: 0;
+                }
+                .colored_span {
+                  padding: 0 5px;
+                }
+              }
+            }
+          }
+        }
+        button:hover {
+          background-color: darken($accent_color, 5%);
+        }
+      }
+    }
+    .why_it_works {
+      max-width: $max_width;
+      margin: 0 auto;
+      padding: $padding * 4 $padding * 4;
+      background: lighten($gray_color, 83%);
+
+      h2 {
+        margin-bottom: $margin * 4;
+        text-align: center;
+        font-size: $m_font_size;
       }
 
       article {
-        background: none;
-        flex: 1;
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'image article';
+        align-items: center;
+        margin: 0;
+        background: $main_color;
 
-        h2, p, button {
-          margin-left: $margin * 4;
+        img {
+          grid-area: image;
+          object-fit: cover;
+          height: 400px;
+          width: 100%;
         }
+        .description {
+          grid-area: article;
+          justify-self: center;
+          width: 70%;
+
+          h3 {
+            font-size: $xl_font_size;
+          }
+
+          p {
+            font-size: $s_font_size;
+          }
+
+          button:hover {
+            background-color: darken($accent_color, 5%);
+          }
+        }
+      }
+
+      .reverse {
+        //margin: $margin * 4 0;
+      }
+      .reverse > img {
+        grid-column: 2;
+        justify-self: end;
+      }
+      .reverse > .description {
+        grid-column: 1;
+        margin-left: 0;
+        margin-right: $margin;
+        width: 70%;
+        justify-self: center;
+      }
+    }
+    .workout {
+
+      article {
+        //background: lighten($gray_color, 83%);
+        //background: $main_color;
+        align-items: center;
+        padding: $padding*3 0;
 
         h2 {
-          color: $second_color;
+          font-size: $m_font_size;
+          //color: $second_color;
+          margin-bottom: $margin;
         }
 
         p {
-          color: $second_color;
+          font-size: $s_font_size;
+          //color: $second_color;
         }
 
         button:hover {
@@ -90,5 +246,17 @@
         }
       }
     }
+  }
+  footer {
+    .footer_container {
+      margin: $margin * 2 auto;
+      padding: 0 $padding * 4;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  main .why_it_works article .description button {
+    width: 300px;
   }
 }
