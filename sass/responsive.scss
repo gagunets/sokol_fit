@@ -169,8 +169,8 @@
 
       h2 {
         margin-bottom: $margin * 4;
-        text-align: center;
-        font-size: $m_font_size;
+        //text-align: center;
+        font-size: $xl_font_size;
       }
 
       article {
@@ -229,7 +229,7 @@
         padding: $padding*3 0;
 
         h2 {
-          font-size: $m_font_size;
+          font-size: $xl_font_size;
           //color: $second_color;
           margin-bottom: $margin;
         }

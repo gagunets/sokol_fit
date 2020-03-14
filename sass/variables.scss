@@ -1,7 +1,5 @@
 //fonts URLs
 
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
-
 @font-face {
   font-family: "BlenderPro_heavy";
   src: url('../fonts/BlenderPro-Heavy.ttf');
@@ -59,7 +57,7 @@ $accent_color: #15aabf;
 $gray_color: #222222;
 
 //fonts
-$header_upper: 'Fugaz One', cursive;
+$header_upper: BlenderPro_heavy;
 $header: BlenderPro_bold;
 $medium: BlenderPro_medium;
 $book: BlenderPro_book;
