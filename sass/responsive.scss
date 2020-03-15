@@ -10,7 +10,7 @@
   }
 
   main .workout article button,
-  main .skills article button {
+  main .skills .skills_box button {
     @include button;
     width: 50%;
   }
@@ -63,7 +63,7 @@
   }
 
   main .workout article button,
-  main .skills article button {
+  main .skills .skills_box button {
     @include button;
     width: 300px;
   }
@@ -114,7 +114,7 @@
       padding-top: 0;
       padding-bottom: $padding * 4;
 
-      article {
+      .skills_box {
         max-width: $max_width;
         text-align: center;
         width: 90%;

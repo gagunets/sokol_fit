@@ -334,7 +334,7 @@ footer .footer_container .footer_social .credits a {
   }
 
   main .workout article button,
-main .skills article button {
+main .skills .skills_box button {
     border: none;
     outline: none;
     background-color: #15aabf;
@@ -387,7 +387,7 @@ main .skills article button {
   }
 
   main .workout article button,
-main .skills article button {
+main .skills .skills_box button {
     border: none;
     outline: none;
     background-color: #15aabf;
@@ -450,39 +450,39 @@ main .skills article button {
     padding-top: 0;
     padding-bottom: 80px;
   }
-  main .skills article {
+  main .skills .skills_box {
     max-width: 1380px;
     text-align: center;
     width: 90%;
   }
-  main .skills article .skills_items div {
+  main .skills .skills_box .skills_items div {
     display: flex;
     flex-direction: row;
   }
-  main .skills article .skills_items div .item {
+  main .skills .skills_box .skills_items div .item {
     flex: 1;
     margin-bottom: 20px;
     flex-direction: column;
   }
-  main .skills article .skills_items div .item .item_img_icon {
+  main .skills .skills_box .skills_items div .item .item_img_icon {
     height: 35px;
   }
-  main .skills article .skills_items div .item .item_img_icon img {
+  main .skills .skills_box .skills_items div .item .item_img_icon img {
     width: 35px;
   }
-  main .skills article .skills_items div .item .item_icon_container {
+  main .skills .skills_box .skills_items div .item .item_icon_container {
     margin-bottom: 10px;
   }
-  main .skills article .skills_items div .item .item_icon_container .fas {
+  main .skills .skills_box .skills_items div .item .item_icon_container .fas {
     font-size: 35px;
   }
-  main .skills article .skills_items div .item .item_span_container .verb_span {
+  main .skills .skills_box .skills_items div .item .item_span_container .verb_span {
     margin-left: 0;
   }
-  main .skills article .skills_items div .item .item_span_container .colored_span {
+  main .skills .skills_box .skills_items div .item .item_span_container .colored_span {
     padding: 0 5px;
   }
-  main .skills article button:hover {
+  main .skills .skills_box button:hover {
     background-color: #1296a8;
   }
   main .why_it_works {
