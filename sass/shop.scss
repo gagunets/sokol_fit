@@ -1,0 +1,12 @@
+@import "variables";
+
+header {
+  padding: $padding;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/web/barbell_web.jpg") center center;
+  background-size: cover;
+
+  .main_section {
+    margin-top: $margin * 3;
+  }
+}

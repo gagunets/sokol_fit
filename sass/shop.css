@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+header {
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/web/barbell_web.jpg") center center;
+  background-size: cover;
+}
+header .main_section {
+  margin-top: 60px;
+}
+
+/*# sourceMappingURL=shop.css.map */
