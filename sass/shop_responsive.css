@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+@media (min-width: 550px) {
+  main .products_box {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 750px) {
+  main .products_box {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 80px 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=shop_responsive.css.map */

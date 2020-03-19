@@ -18,6 +18,566 @@
   font-family: "BlenderPro_thin";
   src: url("../fonts/BlenderPro-Thin.ttf");
 }
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/web/run_man_web.jpg") center center;
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+header nav .desktop_logo {
+  display: none;
+}
+header nav .mobile_logo {
+  width: 100px;
+  margin: 0 auto;
+}
+header nav .navigation ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+header nav .navigation ul li a {
+  font-family: BlenderPro_thin;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+header nav .navigation ul li a .fa-shopping-bag {
+  color: #15aabf;
+}
+header .main_section {
+  margin-top: 100px;
+}
+header .main_section h1 {
+  font-family: BlenderPro_heavy;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+header .main_section p {
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+
+main .skills {
+  background-color: #222222;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+main .skills h2 {
+  font-family: BlenderPro_heavy;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+main .skills .skills_items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .skills .skills_items .items_left_col,
+main .skills .skills_items .items_right_col {
+  flex: 1;
+}
+main .skills .skills_items .item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+main .skills .skills_items .item .item_img_icon {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+main .skills .skills_items .item .item_img_icon img {
+  width: 25px;
+}
+main .skills .skills_items .item .item_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+main .skills .skills_items .item .item_icon_container .fas {
+  font-size: 25px;
+  color: #ffffff;
+}
+main .skills .skills_items .item .item_span_container {
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+main .skills .skills_items .item .item_span_container .verb_span {
+  margin-left: 10px;
+  color: #ffffff;
+}
+main .skills .skills_items .item .item_span_container .colored_span {
+  color: #15aabf;
+  margin: 0;
+}
+main .skills button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+main .why_it_works {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px 20px;
+}
+main .why_it_works h2 {
+  font-family: BlenderPro_heavy;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main .why_it_works article {
+  margin-bottom: 20px;
+}
+main .why_it_works article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+main .why_it_works article .description {
+  padding: 20px 0;
+}
+main .why_it_works article .description h3 {
+  font-family: BlenderPro_medium;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+main .why_it_works article .description p {
+  color: #000000;
+  font-family: BlenderPro_book;
+  font-size: 1.1rem;
+}
+main .why_it_works article .description button {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  width: 50%;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+main .workout article {
+  background: linear-gradient(rgba(35, 35, 35, 0.7), rgba(35, 35, 35, 0.7)), url("../img/web/rings_web.jpg") center top;
+  background-size: cover;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .workout article h2 {
+  font-family: BlenderPro_heavy;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+main .workout article p {
+  color: #ffffff;
+  font-family: BlenderPro_book;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+main .workout article button {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+footer {
+  background-color: #222222;
+  padding: 20px;
+}
+footer .footer_container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_container nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer_container nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer_container nav ul li {
+  list-style-type: none;
+  text-align: right;
+}
+footer .footer_container nav ul li a {
+  color: #ffffff;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+footer .footer_container nav ul li a .fa-shopping-bag {
+  color: #15aabf;
+}
+footer .footer_container nav img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer .footer_container .footer_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_container .footer_social .social_icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer_container .footer_social .social_icons a i:hover {
+  color: #15aabf;
+}
+footer .footer_container .footer_social .social_icons i {
+  font-size: 20px;
+  color: #ffffff;
+}
+footer .footer_container .footer_social .social_icons .fa-facebook-f {
+  margin: 0 20px;
+}
+footer .footer_container .footer_social .credits {
+  text-align: center;
+}
+footer .footer_container .footer_social .credits span, footer .footer_container .footer_social .credits p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: BlenderPro_thin;
+  font-size: 1.1rem;
+}
+footer .footer_container .footer_social .credits a {
+  text-decoration: none;
+  color: #15aabf;
+}
+
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+@media (min-width: 550px) {
+  header nav .mobile_logo {
+    width: 150px;
+    margin: 0;
+  }
+
+  main .workout article button,
+main .skills .skills_box button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 50%;
+  }
+
+  footer .footer_container {
+    max-width: 1380px;
+    margin: 20px auto;
+  }
+  footer .footer_container nav {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_container nav ul {
+    display: flex;
+    justify-content: unset;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  footer .footer_container nav ul li {
+    margin-left: 20px;
+    list-style-type: none;
+    text-align: right;
+  }
+  footer .footer_container .footer_social {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+  footer .footer_container .footer_social .social_icons {
+    width: auto;
+    margin-bottom: 0;
+  }
+  footer .footer_container .footer_social .credits {
+    text-align: left;
+  }
+}
+@media (min-width: 750px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  main .workout article button,
+main .skills .skills_box button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 300px;
+  }
+
+  main .why_it_works article .description button {
+    border: none;
+    outline: none;
+    background-color: #15aabf;
+    color: #ffffff;
+    font-family: BlenderPro_medium;
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+
+  header nav {
+    max-width: 1380px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 60px;
+  }
+  header nav .mobile_logo {
+    display: none;
+  }
+  header nav .desktop_logo {
+    display: block;
+    width: 110px;
+  }
+  header nav ul li {
+    margin-left: 20px;
+  }
+
+  header .main_section {
+    max-width: 1380px;
+    margin: 140px auto;
+    padding: 0 60px;
+  }
+  header .main_section .main_header h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    background: #f6f6f6;
+  }
+  main .skills {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  main .skills .skills_box {
+    max-width: 1380px;
+    text-align: center;
+    width: 90%;
+  }
+  main .skills .skills_box .skills_items div {
+    display: flex;
+    flex-direction: row;
+  }
+  main .skills .skills_box .skills_items div .item {
+    flex: 1;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  main .skills .skills_box .skills_items div .item .item_img_icon {
+    height: 35px;
+  }
+  main .skills .skills_box .skills_items div .item .item_img_icon img {
+    width: 35px;
+  }
+  main .skills .skills_box .skills_items div .item .item_icon_container {
+    margin-bottom: 10px;
+  }
+  main .skills .skills_box .skills_items div .item .item_icon_container .fas {
+    font-size: 35px;
+  }
+  main .skills .skills_box .skills_items div .item .item_span_container .verb_span {
+    margin-left: 0;
+  }
+  main .skills .skills_box .skills_items div .item .item_span_container .colored_span {
+    padding: 0 5px;
+  }
+  main .skills .skills_box button:hover {
+    background-color: #1296a8;
+  }
+  main .why_it_works {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 80px 80px;
+    background: #f6f6f6;
+  }
+  main .why_it_works h2 {
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+  }
+  main .why_it_works article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image article";
+    align-items: center;
+    margin: 0;
+    background: #ffffff;
+  }
+  main .why_it_works article img {
+    grid-area: image;
+    height: 400px;
+    width: 100%;
+  }
+  main .why_it_works article .description {
+    grid-area: article;
+    justify-self: center;
+    width: 70%;
+  }
+  main .why_it_works article .description h3 {
+    font-size: 2.5rem;
+  }
+  main .why_it_works article .description p {
+    font-size: 1.3rem;
+  }
+  main .why_it_works article .description button:hover {
+    background-color: #1296a8;
+  }
+  main .why_it_works .reverse > img {
+    grid-column: 2;
+    justify-self: end;
+  }
+  main .why_it_works .reverse > .description {
+    grid-column: 1;
+    margin-left: 0;
+    margin-right: 20px;
+    width: 70%;
+    justify-self: center;
+  }
+  main .workout article {
+    align-items: center;
+    padding: 60px 0;
+  }
+  main .workout article h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  main .workout article p {
+    font-size: 1.3rem;
+  }
+  main .workout article button:hover {
+    background-color: #1296a8;
+  }
+
+  footer .footer_container {
+    margin: 40px auto;
+    padding: 0 80px;
+  }
+}
+@media (min-width: 1000px) {
+  main .why_it_works article .description button {
+    width: 300px;
+  }
+}
 header {
   padding: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/web/barbell_web.jpg") center center;
@@ -25,6 +585,118 @@ header {
 }
 header .main_section {
   margin-top: 60px;
+}
+
+main {
+  padding: 20px;
+}
+main .products_box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .products_box .product {
+  margin-bottom: 20px;
+}
+main .products_box .product__img {
+  height: 300px;
+}
+main .products_box .product__img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+main .products_box .product__details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+main .products_box .product__details__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .products_box .product__details__price .price {
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+main .products_box .product__details__price a {
+  text-decoration: none;
+}
+main .products_box .product__details__price a .plus {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #15aabf;
+  line-height: 0;
+}
+main .products_box .product__details__name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+main .products_box .product__details__name h4 {
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+}
+main .products_box .product__details__name p {
+  font-family: BlenderPro_medium;
+  font-size: 1.1rem;
+  color: gray;
+}
+
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+@media (min-width: 550px) {
+  main .products_box {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 750px) {
+  header .main_section {
+    max-width: 1380px;
+    margin: 60px auto;
+    padding: 0 60px;
+  }
+
+  main {
+    padding: 0;
+  }
+  main .products_box {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 80px 80px;
+  }
+}
+@media (min-width: 1000px) {
+  main .products_box {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  main .products_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=shop.css.map */

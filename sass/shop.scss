@@ -1,4 +1,5 @@
 @import "variables";
+@import "index";
 
 header {
   padding: $padding;
@@ -10,3 +11,73 @@ header {
     margin-top: $margin * 3;
   }
 }
+
+main {
+  padding: $padding;
+
+  .products_box {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .product {
+      margin-bottom: $margin;
+
+      &__img {
+        height: 300px;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+
+      &__details {
+        display: flex;
+        flex-direction: column;
+        margin-top: $margin;
+
+        &__price {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .price {
+            font-family: $text;
+            font-size: $s_font_size;
+          }
+
+          a {
+            text-decoration: none;
+
+            .plus {
+              cursor: pointer;
+              font-size: $m_font_size;
+              color: $accent_color;
+              line-height: 0;
+            }
+          }
+        }
+        &__name {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: $margin;
+
+          h4 {
+            font-family: $medium;
+            font-size: $s_font_size;
+          }
+
+          p {
+            font-family: $medium;
+            font-size: $xs_font_size;
+            color: lighten($second_color, 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "shop_responsive";
