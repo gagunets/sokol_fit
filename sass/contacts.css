@@ -580,7 +580,7 @@ main .skills .skills_box button {
 }
 header {
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/web/barbell_web.jpg") center center;
+  background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("../img/web/weightlifting_web.jpg") center center;
   background-size: cover;
 }
 header .main_section {
@@ -588,60 +588,82 @@ header .main_section {
 }
 
 main {
+  background-color: #222222;
+}
+
+.contact_box {
   padding: 20px;
 }
-main .products_box {
-  display: grid;
-  grid-template-columns: 1fr;
+.contact_box .contact_info {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
-main .products_box .product {
-  margin-bottom: 20px;
-}
-main .products_box .product__img {
-  height: 300px;
-}
-main .products_box .product__img img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-main .products_box .product__details {
+.contact_box .contact_info .item {
   display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  align-items: flex-start;
+  margin: 15px 0;
 }
-main .products_box .product__details__price {
+.contact_box .contact_info .item_icon_container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 30px;
 }
-main .products_box .product__details__price .price {
-  font-family: BlenderPro_thin;
-  font-size: 1.3rem;
+.contact_box .contact_info .item_icon_container .fas {
+  font-size: 25px;
+  color: #ffffff;
 }
-main .products_box .product__details__price a {
-  text-decoration: none;
-}
-main .products_box .product__details__price a .plus {
-  cursor: pointer;
-  font-size: 2rem;
-  color: #15aabf;
-  line-height: 0;
-}
-main .products_box .product__details__name {
+.contact_box .contact_info .item_span_container {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+}
+.contact_box .contact_info .item_span_container .verb_span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: BlenderPro_book;
+}
+.contact_box .contact_info .item_span_container .colored_span {
+  color: #15aabf;
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: BlenderPro_thin;
+}
+.contact_box .contact_form {
   margin-bottom: 20px;
 }
-main .products_box .product__details__name h4 {
+.contact_box .contact_form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: BlenderPro_bold;
+}
+.contact_box .contact_form input[type=text], .contact_box .contact_form [type=email], .contact_box .contact_form textarea {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background: #3c3c3c;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: BlenderPro_book;
+  outline: none;
+}
+.contact_box .contact_form input[type=submit] {
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
   font-family: BlenderPro_medium;
   font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  width: 100%;
 }
-main .products_box .product__details__name p {
-  font-family: BlenderPro_medium;
-  font-size: 1.1rem;
-  color: gray;
+.contact_box .contact_form input[type=submit]:hover {
+  background-color: #1296a8;
 }
 
 @font-face {
@@ -665,9 +687,15 @@ main .products_box .product__details__name p {
   src: url("../fonts/BlenderPro-Thin.ttf");
 }
 @media (min-width: 550px) {
-  main .products_box {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  main .contact_box .contact_form input[type=submit] {
+    width: 300px;
+  }
+  main .contact_info {
+    display: flex;
+    flex-direction: row;
+  }
+  main .contact_info .item {
+    flex: 1;
   }
 }
 @media (min-width: 750px) {
@@ -680,23 +708,40 @@ main .products_box .product__details__name p {
   main {
     padding: 0;
   }
-  main .products_box {
+  main .contact_box {
     max-width: 1380px;
     margin: 0 auto;
     padding: 80px 80px;
   }
-}
-@media (min-width: 1000px) {
-  main .products_box {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  main .contact_box .contact_info {
+    margin-top: 0;
+  }
+  main .contact_box .contact_form {
+    margin-bottom: 0;
   }
 }
-@media (min-width: 1200px) {
-  main .products_box {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+@media (min-width: 1000px) {
+  .contact_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info form";
+  }
+  .contact_box .contact_info {
+    height: 100%;
+    background: linear-gradient(rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.9)), url("../img/web/rings_web.jpg") center center;
+    background-size: cover;
+    grid-area: info;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact_box .contact_info .item {
+    flex: 0;
+  }
+  .contact_box .contact_form {
+    margin-left: 60px;
+    grid-area: form;
   }
 }
 
-/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=contacts.css.map */

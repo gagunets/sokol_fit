@@ -1,0 +1,98 @@
+@import "variables";
+@import "index";
+
+header {
+  padding: $padding;
+  background: linear-gradient(rgba(35, 35, 35, .6), rgba(35, 35, 35, .6)),
+  url("../img/web/weightlifting_web.jpg") center center;
+  background-size: cover;
+
+  .main_section {
+    margin-top: $margin * 3;
+  }
+}
+
+main {
+  background-color: $gray_color;
+}
+
+.contact_box {
+  padding: $padding;
+
+  .contact_info {
+    margin-top: $margin * 2;
+    margin-bottom: $margin*3;
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      margin: 15px 0;
+      }
+
+      .item_icon_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+
+        .fas {
+          font-size: 25px;
+          color: $main_color;
+        }
+      }
+
+      .item_span_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: $margin;
+
+        .verb_span {
+          color: $main_color;
+          text-transform: uppercase;
+          font-size: $s_font_size;
+          font-family: $book;
+        }
+
+        .colored_span {
+          color: $accent_color;
+          margin: 0;
+          font-size: $s_font_size;
+          font-family: $text;
+        }
+      }
+  }
+  .contact_form {
+    margin-bottom: $margin;
+
+    h2 {
+      margin-bottom: $margin;
+      font-size: $m_font_size;
+      color: $main_color;
+      font-family: $header;
+    }
+
+    input[type=text], [type=email], textarea {
+      width: 100%;
+      padding: $padding;
+      border: none;
+      background: lighten($gray_color, 10%);
+      box-sizing: border-box;
+      margin-bottom: $margin;
+      font-size: $s_font_size;
+      font-family: $book;
+      outline: none;
+    }
+
+    input[type=submit] {
+      @include button;
+      width: 100%;
+    }
+
+    input[type=submit]:hover {
+      background-color: darken($accent_color, 5%);
+    }
+  }
+}
+
+
+@import "contacts_responsive";
