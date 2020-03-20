@@ -64,13 +64,6 @@ main {
   .contact_form {
     margin-bottom: $margin;
 
-    h2 {
-      margin-bottom: $margin;
-      font-size: $m_font_size;
-      color: $main_color;
-      font-family: $header;
-    }
-
     input[type=text], [type=email], textarea {
       width: 100%;
       padding: $padding;

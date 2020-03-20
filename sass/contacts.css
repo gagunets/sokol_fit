@@ -633,12 +633,6 @@ main {
 .contact_box .contact_form {
   margin-bottom: 20px;
 }
-.contact_box .contact_form h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #ffffff;
-  font-family: BlenderPro_bold;
-}
 .contact_box .contact_form input[type=text], .contact_box .contact_form [type=email], .contact_box .contact_form textarea {
   width: 100%;
   padding: 20px;
@@ -711,7 +705,7 @@ main {
   main .contact_box {
     max-width: 1380px;
     margin: 0 auto;
-    padding: 80px 80px;
+    padding: 80px 80px 40px 80px;
   }
   main .contact_box .contact_info {
     margin-top: 0;

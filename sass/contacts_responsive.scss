@@ -31,7 +31,7 @@
     .contact_box {
       max-width: $max_width;
       margin: 0 auto;
-      padding: $padding * 4 $padding * 4;
+      padding: $padding * 4 $padding * 4 $padding * 2 $padding * 4;
 
       .contact_info {
         margin-top: 0;
