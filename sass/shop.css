@@ -82,6 +82,9 @@ header nav .navigation ul li a {
 header nav .navigation ul li a .fa-shopping-bag {
   color: #15aabf;
 }
+header nav .navigation ul li a .fa-shopping-bag:focus {
+  outline: none;
+}
 header .main_section {
   margin-top: 100px;
 }

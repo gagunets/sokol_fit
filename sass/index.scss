@@ -48,6 +48,10 @@ header {
         .fa-shopping-bag {
           color: $accent_color;
         }
+
+        .fa-shopping-bag:focus {
+          outline: none;
+        }
       }
     }
   }
