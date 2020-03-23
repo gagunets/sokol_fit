@@ -152,6 +152,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: $padding*2 $padding $padding $padding;
+    scroll-behavior: smooth;
 
     h2 {
       @include h2;

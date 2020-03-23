@@ -169,3 +169,27 @@
     padding: $padding - 1px;
   }
 }
+
+@media (max-width: 750px) {
+  .alert {
+    width: 100%;
+    left: unset;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+  .card-products {
+    .minus {
+      padding: 4px 0;
+    }
+
+    .plus {
+      padding-left: 0;
+    }
+
+    .col-1 {
+      padding: 0;
+    }
+  }
+}

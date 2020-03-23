@@ -176,6 +176,7 @@ main .why_it_works {
   display: flex;
   flex-direction: column;
   padding: 40px 20px 20px 20px;
+  scroll-behavior: smooth;
 }
 main .why_it_works h2 {
   font-family: BlenderPro_heavy;
@@ -762,6 +763,26 @@ main .skills .skills_box button {
   padding: 19px;
 }
 
+@media (max-width: 750px) {
+  .alert {
+    width: 100%;
+    left: unset;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .card-products .minus {
+    padding: 4px 0;
+  }
+  .card-products .plus {
+    padding-left: 0;
+  }
+  .card-products .col-1 {
+    padding: 0;
+  }
+}
 header {
   padding: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 35, 0.6)), to(rgba(35, 35, 35, 0.6))), url("../img/web/weightlifting_web.jpg") center center;
@@ -1060,6 +1081,26 @@ main {
   padding: 19px;
 }
 
+@media (max-width: 750px) {
+  .alert {
+    width: 100%;
+    left: unset;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .card-products .minus {
+    padding: 4px 0;
+  }
+  .card-products .plus {
+    padding-left: 0;
+  }
+  .card-products .col-1 {
+    padding: 0;
+  }
+}
 @media (min-width: 550px) {
   main .contact_box .contact_form input[type=submit] {
     width: 300px;
