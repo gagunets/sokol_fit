@@ -1,6 +1,5 @@
 @import "variables";
 
-
 //responsive
 
 @media (min-width: 550px) {
@@ -90,7 +89,7 @@
       width: 110px;
     }
 
-    ul li {
+    .navigation ul li {
         margin-left: $margin;
     }
   }
@@ -169,7 +168,6 @@
 
       h2 {
         margin-bottom: $margin * 4;
-        //text-align: center;
         font-size: $xl_font_size;
       }
 
@@ -204,10 +202,6 @@
           }
         }
       }
-
-      .reverse {
-        //margin: $margin * 4 0;
-      }
       .reverse > img {
         grid-column: 2;
         justify-self: end;
@@ -221,22 +215,17 @@
       }
     }
     .workout {
-
       article {
-        //background: lighten($gray_color, 83%);
-        //background: $main_color;
         align-items: center;
         padding: $padding*3 0;
 
         h2 {
           font-size: $xl_font_size;
-          //color: $second_color;
           margin-bottom: $margin;
         }
 
         p {
           font-size: $s_font_size;
-          //color: $second_color;
         }
 
         button:hover {

@@ -71,6 +71,8 @@ header nav .navigation ul {
   margin-top: 20px;
 }
 header nav .navigation ul li a {
+  z-index: 0;
+  position: relative;
   font-family: BlenderPro_thin;
   color: #ffffff;
   text-decoration: none;
@@ -165,6 +167,10 @@ main .skills button {
   cursor: pointer;
   letter-spacing: 2px;
   margin-top: 40px;
+}
+main .skills button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 main .why_it_works {
   display: flex;
@@ -302,7 +308,7 @@ footer .footer_container .footer_social .social_icons {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 footer .footer_container .footer_social .social_icons a i:hover {
   color: #15aabf;
@@ -321,6 +327,7 @@ footer .footer_container .footer_social .credits span, footer .footer_container 
   color: rgba(255, 255, 255, 0.8);
   font-family: BlenderPro_thin;
   font-size: 1.1rem;
+  margin: 0;
 }
 footer .footer_container .footer_social .credits a {
   text-decoration: none;
@@ -448,7 +455,7 @@ main .skills .skills_box button {
     display: block;
     width: 110px;
   }
-  header nav ul li {
+  header nav .navigation ul li {
     margin-left: 20px;
   }
 
@@ -578,8 +585,187 @@ main .skills .skills_box button {
     width: 300px;
   }
 }
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+.alert {
+  position: fixed;
+  top: 50px;
+  width: 50%;
+  left: 25%;
+  z-index: 1051;
+}
+
+.alert-success {
+  background-color: #97efa6;
+  border: 1px solid #1fce3e;
+  border-radius: 0;
+}
+.alert-success strong {
+  color: #127523;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.alert-success .close {
+  height: 85%;
+  color: #062f35;
+  text-shadow: none;
+}
+
+.alert-danger {
+  background-color: #ffcac6;
+  border: 1px solid #ff2413;
+  border-radius: 0;
+}
+.alert-danger strong {
+  color: #df1000;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.alert-danger .close {
+  height: 85%;
+  color: #ac0c00;
+  text-shadow: none;
+}
+
+.badge {
+  position: absolute;
+  top: -9px;
+  right: -15px;
+  z-index: -1;
+  font-family: BlenderPro_thin;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #15aabf;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 2px 0 0 0;
+}
+
+.badge:focus {
+  outline: none;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-title {
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.modal-content .close {
+  outline: none;
+}
+.modal-content .card-img-top {
+  border-radius: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.modal-content .card-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: BlenderPro_medium;
+  font-size: 1.6rem;
+}
+.modal-content .card-text {
+  margin: 0;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.modal-content .btn-close {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: #222222;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.modal-content .btn-close:hover {
+  background-color: #2f2f2f;
+}
+.modal-content .btn-primary {
+  outline: none;
+  margin: 0 0 0 12px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+.modal-content .btn-primary:hover {
+  background-color: #108191;
+}
+
+.cart-product-list-container strong {
+  font-family: BlenderPro_bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.cart-product-list-container .card-products {
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.cart-product-list-container .card-products .plus, .cart-product-list-container .card-products .minus {
+  font-family: BlenderPro_thin;
+  font-size: 2rem;
+  line-height: 0;
+  height: 20px;
+  vertical-align: unset;
+}
+
+.form-contacts .form-group {
+  margin: 0;
+}
+.form-contacts .form-control {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  background: #e6e6e6;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: BlenderPro_book;
+  margin-top: 0;
+  outline: none;
+}
+.form-contacts input.form-control:focus {
+  border: 1px solid #15aabf;
+  box-shadow: none;
+  padding: 19px;
+}
+
 header {
   padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 35, 0.6)), to(rgba(35, 35, 35, 0.6))), url("../img/web/weightlifting_web.jpg") center center;
+  background: -o-linear-gradient(rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("../img/web/weightlifting_web.jpg") center center;
   background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("../img/web/weightlifting_web.jpg") center center;
   background-size: cover;
 }
@@ -599,13 +785,23 @@ main {
   margin-bottom: 60px;
 }
 .contact_box .contact_info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin: 15px 0;
 }
 .contact_box .contact_info .item_icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 30px;
 }
@@ -614,7 +810,12 @@ main {
   color: #ffffff;
 }
 .contact_box .contact_info .item_span_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 20px;
 }
@@ -638,11 +839,13 @@ main {
   padding: 20px;
   border: none;
   background: #3c3c3c;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-family: BlenderPro_book;
   outline: none;
+  color: #ffffff;
 }
 .contact_box .contact_form input[type=submit] {
   border: none;
@@ -680,6 +883,183 @@ main {
   font-family: "BlenderPro_thin";
   src: url("../fonts/BlenderPro-Thin.ttf");
 }
+@font-face {
+  font-family: "BlenderPro_heavy";
+  src: url("../fonts/BlenderPro-Heavy.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_bold";
+  src: url("../fonts/BlenderPro-Bold.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_medium";
+  src: url("../fonts/BlenderPro-Medium.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_book";
+  src: url("../fonts/BlenderPro-Book.ttf");
+}
+@font-face {
+  font-family: "BlenderPro_thin";
+  src: url("../fonts/BlenderPro-Thin.ttf");
+}
+.alert {
+  position: fixed;
+  top: 50px;
+  width: 50%;
+  left: 25%;
+  z-index: 1051;
+}
+
+.alert-success {
+  background-color: #97efa6;
+  border: 1px solid #1fce3e;
+  border-radius: 0;
+}
+.alert-success strong {
+  color: #127523;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.alert-success .close {
+  height: 85%;
+  color: #062f35;
+  text-shadow: none;
+}
+
+.alert-danger {
+  background-color: #ffcac6;
+  border: 1px solid #ff2413;
+  border-radius: 0;
+}
+.alert-danger strong {
+  color: #df1000;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.alert-danger .close {
+  height: 85%;
+  color: #ac0c00;
+  text-shadow: none;
+}
+
+.badge {
+  position: absolute;
+  top: -9px;
+  right: -15px;
+  z-index: -1;
+  font-family: BlenderPro_thin;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #15aabf;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 2px 0 0 0;
+}
+
+.badge:focus {
+  outline: none;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-title {
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.modal-content .close {
+  outline: none;
+}
+.modal-content .card-img-top {
+  border-radius: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.modal-content .card-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: BlenderPro_medium;
+  font-size: 1.6rem;
+}
+.modal-content .card-text {
+  margin: 0;
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.modal-content .btn-close {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: #222222;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.modal-content .btn-close:hover {
+  background-color: #2f2f2f;
+}
+.modal-content .btn-primary {
+  outline: none;
+  margin: 0 0 0 12px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: #15aabf;
+  color: #ffffff;
+  font-family: BlenderPro_medium;
+  font-size: 1.3rem;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+.modal-content .btn-primary:hover {
+  background-color: #108191;
+}
+
+.cart-product-list-container strong {
+  font-family: BlenderPro_bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.cart-product-list-container .card-products {
+  font-family: BlenderPro_thin;
+  font-size: 1.3rem;
+}
+.cart-product-list-container .card-products .plus, .cart-product-list-container .card-products .minus {
+  font-family: BlenderPro_thin;
+  font-size: 2rem;
+  line-height: 0;
+  height: 20px;
+  vertical-align: unset;
+}
+
+.form-contacts .form-group {
+  margin: 0;
+}
+.form-contacts .form-control {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  background: #e6e6e6;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: BlenderPro_book;
+  margin-top: 0;
+  outline: none;
+}
+.form-contacts input.form-control:focus {
+  border: 1px solid #15aabf;
+  box-shadow: none;
+  padding: 19px;
+}
+
 @media (min-width: 550px) {
   main .contact_box .contact_form input[type=submit] {
     width: 300px;
@@ -730,7 +1110,7 @@ main {
     justify-content: center;
   }
   .contact_box .contact_info .item {
-    flex: 0;
+    flex: unset;
   }
   .contact_box .contact_form {
     margin-left: 60px;

@@ -1,11 +1,21 @@
 @import "variables";
 @import "index";
+@import "modal-windows";
+
+
+p {
+  margin-bottom: 0;
+}
 
 header {
   padding: $padding;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url("../img/web/barbell_web.jpg") center center;
   background-size: cover;
+
+  nav .navigation ul .fa-shopping-bag {
+    color: $main_color !important;
+  }
 
   .main_section {
     margin-top: $margin * 3;
@@ -21,6 +31,8 @@ main {
 
     .product {
       margin-bottom: $margin;
+      background-color: transparent;
+      border: none;
 
       &__img {
         height: 300px;
@@ -29,6 +41,13 @@ main {
           width: 100%;
           height: 300px;
           object-fit: cover;
+        }
+      }
+
+      &__img:hover {
+        img {
+          filter: brightness(90%);
+          cursor: pointer;
         }
       }
 
@@ -42,21 +61,37 @@ main {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          margin-bottom: 1rem;
 
           .price {
             font-family: $text;
             font-size: $s_font_size;
           }
 
-          a {
-            text-decoration: none;
+          .plus {
+            position: relative;
+            width: 50px;
+            text-align: right;
+            font-size: $xm_font_size;
+            font-family: $text;
+            color: $accent_color;
+            line-height: 0;
+            border: none;
+            background-color: transparent;
+            padding-bottom: .2rem;
+            outline: none;
 
-            .plus {
-              cursor: pointer;
+            span {
+              position: absolute;
               font-size: $m_font_size;
-              color: $accent_color;
-              line-height: 0;
+              font-family: $book;
+              right: 3px;
+              top: 12px;
+              transition:0.2s ease-in-out;
             }
+          }
+          .plus:hover > span {
+            right: 25px;
           }
         }
         &__name {
@@ -67,6 +102,7 @@ main {
           h4 {
             font-family: $medium;
             font-size: $s_font_size;
+            line-height: 0;
           }
 
           p {

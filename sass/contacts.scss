@@ -1,8 +1,14 @@
+
 @import "variables";
 @import "index";
+@import "modal-windows";
 
 header {
   padding: $padding;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 35, .6)), to(rgba(35, 35, 35, .6))),
+  url("../img/web/weightlifting_web.jpg") center center;
+  background: -o-linear-gradient(rgba(35, 35, 35, .6), rgba(35, 35, 35, .6)),
+  url("../img/web/weightlifting_web.jpg") center center;
   background: linear-gradient(rgba(35, 35, 35, .6), rgba(35, 35, 35, .6)),
   url("../img/web/weightlifting_web.jpg") center center;
   background-size: cover;
@@ -24,42 +30,57 @@ main {
     margin-bottom: $margin*3;
 
     .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
       margin: 15px 0;
+    }
+
+    .item_icon_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 30px;
+
+      .fas {
+        font-size: 25px;
+        color: $main_color;
+      }
+    }
+
+    .item_span_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-left: $margin;
+
+      .verb_span {
+        color: $main_color;
+        text-transform: uppercase;
+        font-size: $s_font_size;
+        font-family: $book;
       }
 
-      .item_icon_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-
-        .fas {
-          font-size: 25px;
-          color: $main_color;
-        }
+      .colored_span {
+        color: $accent_color;
+        margin: 0;
+        font-size: $s_font_size;
+        font-family: $text;
       }
-
-      .item_span_container {
-        display: flex;
-        flex-direction: column;
-        margin-left: $margin;
-
-        .verb_span {
-          color: $main_color;
-          text-transform: uppercase;
-          font-size: $s_font_size;
-          font-family: $book;
-        }
-
-        .colored_span {
-          color: $accent_color;
-          margin: 0;
-          font-size: $s_font_size;
-          font-family: $text;
-        }
-      }
+    }
   }
   .contact_form {
     margin-bottom: $margin;
@@ -69,11 +90,13 @@ main {
       padding: $padding;
       border: none;
       background: lighten($gray_color, 10%);
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       margin-bottom: $margin;
       font-size: $s_font_size;
       font-family: $book;
       outline: none;
+      color: $main_color;
     }
 
     input[type=submit] {

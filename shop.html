@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" href="img/logo_icon.svg">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="sass/shop.css">
     <title>SOKOL FIT | Shop</title>
@@ -21,7 +22,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                <li>
+                    <a class="openCartLink" href="#modal-cart" data-toggle="modal">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span id="cart-badge" class="badge badge-light"></span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -33,96 +39,7 @@
 </header>
 <main>
     <div class="products_box">
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_Nano_9_Training_Shoes_Black.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Nano 9</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_CrossFit_Grace_Training.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Grace</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_Nano_9_Training_Shoes_Black.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Nano 9</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_Nano_9_Training_Shoes_Black.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Nano 9</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_Nano_9_Training_Shoes_Black.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Nano 9</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__img">
-                <img src="img/web/shoes/Reebok_Nano_9_Training_Shoes_Black.jpg" alt="Rebook Nano 9 Training Shoes Black">
-            </div>
-            <div class="product__details">
-                <div class="product__details__price">
-                    <p class="price">$150</p>
-                    <a href=""><p class="plus">+</p></a>
-                </div>
-                <div class="product__details__name">
-                    <h4>Rebook Nano 9</h4>
-                    <p>Training Shoes</p>
-                </div>
-            </div>
-        </div>
+        <!-- Products are dynamically generated here -->
     </div>
 </main>
 <footer>
@@ -133,7 +50,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="shop.html"><i class="fas fa-shopping-bag"></i></a></li>
             </ul>
         </nav>
         <div class="footer_social">
@@ -149,5 +66,72 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal Product Info -->
+<div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productInfoLabel">Product info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cart -->
+<div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="container">
+                    <form class="form-contacts">
+                        <div class="form-group row">
+                            <label for="client-name" class="col-form-label"></label>
+                            <input class="form-control" type="text" id="client-name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="client-email" class="col-form-label"></label>
+                            <input class="form-control" type="email" id="client-email" placeholder="Email" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary order">Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script async src="js/alert-window.js"></script>
+<script defer src="js/products-service.js"></script>
+<script defer src="js/cart.js"></script>
+<script defer src="js/product-list.js"></script>
+<script defer src="js/index.js"></script>
 </body>
 </html>

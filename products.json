@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "Reebok Legacy Lifter",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_Legacy_Lifter_Flexweave_Pink.jpg",
+    "description": "Large drone for most critical missions. Can carry load.",
+    "price": 499
+  },
+  {
+    "id": "2",
+    "title": "Rebook Grace",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_CrossFit_Grace_Training.jpg",
+    "description": "Small drone. Can fly undetected.",
+    "price": 199
+  },
+  {
+    "id": "3",
+    "title": "Rebook Nano 9",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_Nano_9_Training_Shoes_Blue.jpg",
+    "description": "Rebook Nano 9",
+    "price": 249
+  },
+  {
+    "id": "4",
+    "title": "Rebook Nano 9",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_Nano_9_Training_Shoes_Black.jpg",
+    "description": "Nice-looking drone in red color",
+    "price": 229
+  },
+  {
+    "id": "5",
+    "title": "Reebok Legacy Lifter",
+    "subtitle": "Training Shoes (White)",
+    "image": "Reebok_Legacy_Lifter_FlexWeave_White.jpg",
+    "description": "Black gyroboard to match your style",
+    "price": 729
+  },
+  {
+    "id": "6",
+    "title": "Reebok Legacy Lifter",
+    "subtitle": "Training Shoes (Pink)",
+    "image": "Reebok_Legacy_Lifter_Flexweave_Pink.jpg",
+    "description": "White gyroboard with blue lights",
+    "price": 829
+  },
+  {
+    "id": "7",
+    "title": "Reebok Grace",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_CrossFit_Grace_Training_Pink.jpg.jpg",
+    "description": "Best crossover in the World",
+    "price": 999
+  },
+  {
+    "id": "8",
+    "title": "Reebok Grace",
+    "subtitle": "Training Shoes",
+    "image": "Reebok_CrossFit_Grace_Training.jpg",
+    "description": "Best sports car in the World",
+    "price": 249
+  }
+]
