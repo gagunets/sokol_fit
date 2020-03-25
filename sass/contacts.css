@@ -478,6 +478,16 @@ main .skills .skills_box button {
     visibility: visible;
     height: 10px;
   }
+  header nav .navigation ul li .active {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: -2px;
+    left: -5px;
+    background-color: rgba(21, 170, 191, 0.5);
+    z-index: -1;
+  }
 
   header .main_section {
     max-width: 1380px;
