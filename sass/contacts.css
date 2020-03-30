@@ -283,6 +283,7 @@ main {
   margin: 0;
   font-size: 1.3rem;
   font-family: BlenderPro_thin;
+  text-decoration: none;
 }
 .contact_box .contact_form {
   margin-bottom: 20px;
