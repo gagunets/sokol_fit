@@ -260,6 +260,10 @@ main .workout article button {
   letter-spacing: 2px;
   width: 100%;
 }
+main .workout article button a {
+  width: 100%;
+  height: 100%;
+}
 
 footer {
   background-color: #222222;
