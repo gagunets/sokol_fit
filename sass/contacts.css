@@ -292,6 +292,7 @@ main {
   width: 100%;
   padding: 20px;
   border: none;
+  border-radius: 0;
   background: #3c3c3c;
   -webkit-appearance: none;
   -webkit-box-sizing: border-box;
@@ -313,6 +314,7 @@ main {
   padding: 10px;
   cursor: pointer;
   letter-spacing: 2px;
+  border-radius: 0;
   width: 100%;
 }
 .contact_box .contact_form input[type=submit]:hover {
