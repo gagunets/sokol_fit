@@ -1,7 +1,6 @@
-@import "variables";
-@import "index-main";
-@import "modal-windows";
 
+@import "variables";
+@import "modal-windows";
 
 p {
   margin-bottom: 0;
@@ -18,7 +17,7 @@ header {
   }
 
   .main_section {
-    margin-top: $margin * 3;
+    margin-top: $margin * 2;
   }
 }
 

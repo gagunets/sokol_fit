@@ -151,10 +151,6 @@ main .skills button {
   letter-spacing: 2px;
   margin-top: 40px;
 }
-main .skills button a {
-  text-decoration: none;
-  color: #ffffff;
-}
 main .why_it_works {
   display: flex;
   flex-direction: column;
@@ -228,7 +224,11 @@ main .workout article p {
   font-size: 1.3rem;
   margin-bottom: 40px;
 }
-main .workout article button {
+main .workout article form {
+  width: 100%;
+  text-align: center;
+}
+main .workout article form button {
   border: none;
   outline: none;
   background-color: #15aabf;
@@ -239,10 +239,6 @@ main .workout article button {
   cursor: pointer;
   letter-spacing: 2px;
   width: 100%;
-}
-main .workout article button a {
-  width: 100%;
-  height: 100%;
 }
 
 footer {
@@ -310,6 +306,7 @@ footer .footer_container .footer_social .social_icons .fa-facebook-f {
 }
 footer .footer_container .footer_social .credits {
   text-align: center;
+  margin-top: 20px;
 }
 footer .footer_container .footer_social .credits span, footer .footer_container .footer_social .credits p {
   color: rgba(255, 255, 255, 0.8);
@@ -328,7 +325,7 @@ footer .footer_container .footer_social .credits a {
     margin: 0;
   }
 
-  main .workout article button,
+  main .workout article form button,
 main .skills .skills_box button {
     border: none;
     outline: none;
@@ -373,6 +370,7 @@ main .skills .skills_box button {
   }
   footer .footer_container .footer_social .credits {
     text-align: left;
+    margin: 0;
   }
 }
 @media (min-width: 750px) {
@@ -381,7 +379,7 @@ main .skills .skills_box button {
     margin: auto;
   }
 
-  main .workout article button,
+  main .workout article form button,
 main .skills .skills_box button {
     border: none;
     outline: none;
@@ -395,7 +393,7 @@ main .skills .skills_box button {
     width: 300px;
   }
 
-  main .why_it_works article .description button {
+  main .why_it_works article .description form button {
     border: none;
     outline: none;
     background-color: #15aabf;
@@ -421,7 +419,7 @@ main .skills .skills_box button {
   }
   header nav .desktop_logo {
     display: block;
-    width: 60px;
+    width: 50px;
   }
   header nav .navigation ul li {
     margin-left: 20px;
@@ -489,6 +487,7 @@ main .skills .skills_box button {
     height: 35px;
   }
   main .skills .skills_box .skills_items div .item .item_img_icon img {
+    margin-left: -7px;
     width: 35px;
   }
   main .skills .skills_box .skills_items div .item .item_icon_container {
