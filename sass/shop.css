@@ -342,26 +342,6 @@ footer .footer_container .footer_social .credits a {
   color: #15aabf;
 }
 
-@font-face {
-  font-family: "BlenderPro_heavy";
-  src: url("../fonts/BlenderPro-Heavy.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_bold";
-  src: url("../fonts/BlenderPro-Bold.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_medium";
-  src: url("../fonts/BlenderPro-Medium.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_book";
-  src: url("../fonts/BlenderPro-Book.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_thin";
-  src: url("../fonts/BlenderPro-Thin.ttf");
-}
 @media (min-width: 550px) {
   header nav .mobile_logo {
     width: 150px;
@@ -912,26 +892,6 @@ main .products_box .product__details__name p {
   color: gray;
 }
 
-@font-face {
-  font-family: "BlenderPro_heavy";
-  src: url("../fonts/BlenderPro-Heavy.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_bold";
-  src: url("../fonts/BlenderPro-Bold.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_medium";
-  src: url("../fonts/BlenderPro-Medium.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_book";
-  src: url("../fonts/BlenderPro-Book.ttf");
-}
-@font-face {
-  font-family: "BlenderPro_thin";
-  src: url("../fonts/BlenderPro-Thin.ttf");
-}
 @media (min-width: 550px) {
   main .products_box {
     grid-template-columns: 1fr 1fr;
