@@ -171,10 +171,6 @@ main .skills button {
   letter-spacing: 2px;
   margin-top: 40px;
 }
-main .skills button a {
-  text-decoration: none;
-  color: #ffffff;
-}
 main .why_it_works {
   display: flex;
   flex-direction: column;
@@ -259,10 +255,6 @@ main .workout article button {
   cursor: pointer;
   letter-spacing: 2px;
   width: 100%;
-}
-main .workout article button a {
-  width: 100%;
-  height: 100%;
 }
 
 footer {
