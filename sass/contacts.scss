@@ -89,6 +89,7 @@ main {
       padding: $padding;
       border: none;
       background: lighten($gray_color, 10%);
+      -webkit-appearance: none;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       margin-bottom: $margin;
@@ -99,6 +100,7 @@ main {
     }
 
     input[type=submit] {
+      -webkit-appearance: none;
       @include button;
       width: 100%;
     }

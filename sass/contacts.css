@@ -293,6 +293,7 @@ main {
   padding: 20px;
   border: none;
   background: #3c3c3c;
+  -webkit-appearance: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -302,6 +303,7 @@ main {
   color: #ffffff;
 }
 .contact_box .contact_form input[type=submit] {
+  -webkit-appearance: none;
   border: none;
   outline: none;
   background-color: #15aabf;
