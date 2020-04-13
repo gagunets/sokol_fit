@@ -393,7 +393,8 @@ main .skills .skills_box button {
     width: 300px;
   }
 
-  main .why_it_works article .description form button {
+  main .why_it_works article .description form button,
+main .why_it_works article .description button {
     border: none;
     outline: none;
     background-color: #15aabf;
@@ -513,7 +514,7 @@ main .skills .skills_box button {
   }
   main .why_it_works h2 {
     margin-bottom: 80px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   main .why_it_works article {
     display: grid;
@@ -534,7 +535,7 @@ main .skills .skills_box button {
     width: 70%;
   }
   main .why_it_works article .description h3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   main .why_it_works article .description p {
     font-size: 1.3rem;
@@ -558,7 +559,7 @@ main .skills .skills_box button {
     padding: 60px 0;
   }
   main .workout article h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 20px;
   }
   main .workout article p {
@@ -574,7 +575,8 @@ main .skills .skills_box button {
   }
 }
 @media (min-width: 1000px) {
-  main .why_it_works article .description button {
+  main .why_it_works article .description form button,
+main .why_it_works article .description button {
     width: 300px;
   }
 }

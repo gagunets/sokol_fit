@@ -397,7 +397,8 @@ footer {
     width: 300px;
   }
 
-  main .why_it_works article .description form button {
+  main .why_it_works article .description form button,
+  main .why_it_works article .description button{
     @include button;
     width: 100%;
   }
@@ -602,6 +603,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
+  main .why_it_works article .description form button,
   main .why_it_works article .description button {
     width: 300px;
   }
