@@ -14,7 +14,7 @@ app.post('/order', (req, res) => {
             res.status(500).send('Server error');
             return console.log(err);
         }
-        console.log('Data saved: ' + JSON.stringify(req.body));
+        console.log('NEW DATA SAVED: ' + JSON.stringify(req.body));
         res.send('Data saved');
     });
 });
