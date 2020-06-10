@@ -15,7 +15,7 @@ app.post('/order', (req, res) => {
             return console.log(err);
         }
         console.log('NEW DATA SAVED: ' + JSON.stringify(req.body));
-        res.send('Data saved');
+        res.send('Data saved.');
     });
 });
 
