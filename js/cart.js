@@ -2,6 +2,7 @@ class Cart {
     constructor() {
         this.cartContainer = document.querySelector('#modal-cart');
         this.cart = JSON.parse(localStorage['cart'] || '{}');
+        this.name = Cart['title'];
         this.addEventListeners();
         this.updateBadge();
         this.productService = new ProductsService();
@@ -103,7 +104,7 @@ class Cart {
                 body: JSON.stringify({
                     clientName: document.querySelector('#client-name').value,
                     clientEmail: document.querySelector('#client-email').value,
-                    cart: this.cart
+                    cart: this.name
                 })
             })
                 .then(response => {
