@@ -104,7 +104,8 @@ class Cart {
                 body: JSON.stringify({
                     clientName: document.querySelector('#client-name').value,
                     clientEmail: document.querySelector('#client-email').value,
-                    cart: this.name
+                    cart: this.cart,
+                    name: this.name
                 })
             })
                 .then(response => {
